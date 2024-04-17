@@ -17,5 +17,8 @@
     "react-transition-group": "^4.4.5",
     "styled-components": "^6.1.8",
     "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^2.1.4"
   }
 }
