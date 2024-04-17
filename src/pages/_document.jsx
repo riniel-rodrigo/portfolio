@@ -33,7 +33,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* Adicione aqui as configurações do head, como meta tags, fontes, etc. */}
+          <link rel="icon" href="icon.svg" />
         </Head>
         <body>
           <Main />
