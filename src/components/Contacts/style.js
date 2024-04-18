@@ -2,16 +2,20 @@ import styled from "styled-components";
 
 export const ContainerContacts = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  height: 30rem;   
+  gap: 12rem;
+  width: 100%;
+  height:85%;
+  padding-top: 5rem;
+`;
 
-  h1 {
-    font-size: 2.7rem;
-    font-weight: 500;
-  }
+export const Contacts = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 30%;
+  height: 100%;
+  /* border: solid 1px yellow; */
 `;
 
 export const divTitle = styled.div`
@@ -20,21 +24,24 @@ export const divTitle = styled.div`
   gap: 1rem;
 
   h1 {
+    font-size: 2rem;
+    font-weight: 500;
   }
 
   span {
     width: fit-content;
     padding: 0.4rem;
     margin-top: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 500;
     background-color: #202124;
     border-radius: 0.3rem;
     border: solid 1.75px #7e49d9;
     transition: all 0.3s ease;
   }
+
   span:hover {
-    background-color:#7e49d9;
+    background-color: #7e49d9;
     border: solid 1.75px #7e49d9;
     cursor: pointer;
   }
@@ -44,7 +51,14 @@ export const Ul = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 27%;
+  gap:1rem;
+  height: 100%;
+
+  li {
+    display: flex;
+    align-items: end;
+    gap: 0.5rem;
+  }
 
   li a {
     display: flex;
@@ -58,7 +72,6 @@ export const divItem = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  /* border:2px solid red; */
 
   div {
     display: flex;
@@ -69,4 +82,88 @@ export const divItem = styled.div`
   span {
     font-weight: 600;
   }
+`;
+
+export const divLink = styled.div`
+  span {
+    font-size: 0.9rem;
+    text-decoration: underline;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: opacity 0.3s ease-out;
+  }
+`;
+
+export const iconCopy = styled.div`
+  cursor: pointer;
+
+  & > * {
+    transition: all 0.3s ease;
+  }
+
+  & > *:hover {
+    color: #7e49d9;
+  }
+`;
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 35%;
+  /* border: solid 1px yellow; */
+`;
+
+export const Field = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width:75%;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  input{
+    all: unset;
+    padding: 0.6rem;
+    color: #000;
+    background-color: #f0ece6;
+    border-radius: 0.5rem;
+  }
+`;
+
+export const divTextArea = styled.div`
+  display: flex;
+  flex-direction:row;
+  gap: 0.8rem;
+  width:100%;
+
+
+  div{
+    gap: 0.4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  textarea{
+    all: unset;
+    padding: 0.6rem;
+    height: 5rem;
+    color: #000;
+    background-color: #f0ece6;
+    border-radius: 0.5rem;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+`;
+
+export const divSend = styled.div`
+  display: flex;
+  justify-content:end;
+  width:100%;
 `;

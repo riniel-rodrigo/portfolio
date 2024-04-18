@@ -108,3 +108,4 @@ export const AboutmeDivRight = styled.div`
     height: auto;
   }
 `;
+ 

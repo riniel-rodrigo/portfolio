@@ -20,16 +20,13 @@ const rubik = Rubik_Doodle_Shadow({
 
 export default function Header() {
 
-  const [text, setText] = useState("");
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseMove = () => {
-    setText("iniel");
     setIsHovered(true);
   };
 
   const handleMouseLeave = () => {
-    setText("");
     setIsHovered(false);
   };
 
@@ -39,7 +36,7 @@ export default function Header() {
         <Link href="/">
           <S.LogoDiv onMouseEnter={handleMouseMove} onMouseLeave={handleMouseLeave}>
             <Image src="/icon.svg" width={55} height={55} alt="Logo Riniel, ícone" />
-            <span className={`${rubik.className} ${isHovered ? "hovered" : ""}`}>{text}</span>
+            <span className={rubik.className} style={{ opacity: isHovered ? 1 : 0 }}>iniel</span>
           </S.LogoDiv>
         </Link>
 

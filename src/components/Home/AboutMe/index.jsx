@@ -2,7 +2,7 @@ import { JetBrains_Mono } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
 
-import profilepic from "../../../../public/profilepic.png";
+import profilepic from "../../../../public/sp-icon.png";
 
 import * as S from "./style.js";
 
