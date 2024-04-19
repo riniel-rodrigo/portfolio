@@ -1,4 +1,4 @@
-import * as S from './index.js';
+import * as S from './style.js';
 
 
 export default function Button({content, dark, children}){

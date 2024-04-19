@@ -14,15 +14,32 @@ export const ContainerContacts = styled.div`
   justify-content: space-between;
   width: 75%;
   flex-wrap: wrap-reverse;
+
+  @media screen and (max-width: 1145px) {
+    gap: 2rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 87%;
+    gap:4rem;
+  }
 `;
 
 export const Contacts = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width:28rem;
+  width: 28rem;
   height: 100%;
-  /* border: solid 1px yellow; */
+  
+  
+  @media screen and (max-width: 1145px) {
+    width: 100%;
+  }
 `;
 
 export const divTitle = styled.div`
@@ -60,6 +77,10 @@ export const Ul = styled.ul`
   justify-content: space-between;
   gap: 1rem;
   height: 100%;
+
+  @media screen and (max-width: 1145px) {
+    width:25rem;
+  }
 
   li {
     display: flex;
@@ -114,15 +135,38 @@ export const iconCopy = styled.div`
   }
 `;
 
+export const divUlLetter = styled.div`
+  display: flex;
+  justify-content:space-between;
+  gap:1rem;
+  width: 100%;
+
+  @media screen and (max-width: 1145px) {
+    
+  }
+`;
+
+export const DivLetterImg = styled.div`
+  display: none;
+
+  @media screen and (max-width: 1145px) {
+    display: block;
+  }
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+`;
+
 //Estilização do Formulário//////////////////////////////
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  
+
   @media screen and (max-width: 1145px) {
-    width:100%;
+    width: 100%;
   }
 `;
 
@@ -132,10 +176,15 @@ export const Fields = styled.div`
   gap: 1rem;
 
   @media screen and (max-width: 1145px) {
-    flex-direction:row;
-    justify-content:space-between;
-    width:100%;
-    gap:5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5rem;
+  }
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    gap: 2rem;
   }
 `;
 
@@ -144,7 +193,6 @@ export const FieldUser = styled.div`
   flex-direction: column;
   gap: 1rem;
   width: 86%;
-
 
   div {
     display: flex;
@@ -161,7 +209,11 @@ export const FieldUser = styled.div`
   }
 
   @media screen and (max-width: 1145px) {
-    width:30rem;
+    width: 30rem;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 100%;
   }
 `;
 
@@ -190,14 +242,23 @@ export const divTextArea = styled.div`
   }
 
   @media screen and (max-width: 1145px) {
-    flex-direction:column;
-    justify-content:space-between;
-    width:30rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30rem;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 100%;
   }
 `;
 
 export const divSend = styled.div`
   display: flex;
   justify-content: end;
+  align-items: end;
   width: 100%;
+
+  @media screen and (max-width: 700px) {
+    align-items: start;
+  }
 `;

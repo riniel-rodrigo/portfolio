@@ -19,6 +19,10 @@ export const Header = styled.header`
   justify-content: space-between;
   width: 75%;
   height: 85%;
+
+  @media screen and (max-width: 1024px) {
+    width: 90%;
+  }
 `;
 
 export const LogoDiv = styled.div`

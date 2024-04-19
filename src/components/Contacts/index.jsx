@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 import { mockContact } from "../../mocks/mockContact.jsx";
@@ -27,29 +27,37 @@ export default function ContactsContent() {
               <h1>Contatos</h1>
               <span onClick={() => setVisible(!visible)} >{visible ? "Ocultar links" : "Mostrar links"}</span>
             </S.divTitle>
-            <S.Ul>
-              {data.map((item) => (
-                <li>
-                  <a
-                    href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <S.divItem>
-                      <div>{item.icon}</div>
-                      <span>{item.title}</span>
-                    </S.divItem>
 
-                    <S.divLink>
-                      <span style={{ opacity: visible ? 1 : 0 }}>{item.link}</span>
-                    </S.divLink>
-                  </a>
+            <S.divUlLetter>
+              <S.Ul>
+                {data.map((item) => (
+                  <li>
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      <S.divItem>
+                        <div>{item.icon}</div>
+                        <span>{item.title}</span>
+                      </S.divItem>
 
-                  <S.iconCopy style={{ display: visible ? "flex" : "none" }}>
-                    <Icon icon="copy" />
-                  </S.iconCopy>
-                </li>
-              ))}
-            </S.Ul>
+                      <S.divLink>
+                        <span style={{ opacity: visible ? 1 : 0 }}>{item.link}</span>
+                      </S.divLink>
+                    </a>
+
+                    <S.iconCopy style={{ opacity: visible ? 1 : 0 }}>
+                      <Icon icon="copy" />
+                    </S.iconCopy>
+                  </li>
+                ))}
+              </S.Ul>
+
+              <S.DivLetterImg>
+                <Image src="/carta.png" width={250} height={250} alt="Ilustração de uma carta" />
+              </S.DivLetterImg>
+            </S.divUlLetter>
+
           </S.Contacts>
 
           <S.Form>
@@ -77,7 +85,7 @@ export default function ContactsContent() {
                 </div>
 
                 <S.divSend>
-                  <Button dark={true} content={<Icon icon="send" size={24} />} children="Enviar" />
+                  <Button content={<Icon icon="send" size={24} />} children="Enviar" />
                 </S.divSend>
               </S.divTextArea>
             </S.Fields>
