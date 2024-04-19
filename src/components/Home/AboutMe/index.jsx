@@ -2,7 +2,7 @@ import { JetBrains_Mono } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
 
-import profilepic from "../../../../public/sp-icon.png";
+import avatar from "../../../../public/avatar.png";
 
 import * as S from "./style.js";
 
@@ -37,7 +37,7 @@ export default function AboutMe() {
         </S.AboutmeDivLeft>
 
         <S.AboutmeDivRight>
-          <Image className="circle" src="https://avatars.githubusercontent.com/u/80684745?s=400&u=7474a1b0926a6f8760135dc3b0e2c5b3d8561482&v=4" alt="Foto de perfil Riniel" unoptimized width={300} height={300} />
+          <Image className="circle" src={avatar} alt="Foto de perfil Riniel" unoptimized width={450} height={300} />
         </S.AboutmeDivRight>
       </S.AboutmeDiv>
 

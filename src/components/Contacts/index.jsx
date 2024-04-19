@@ -20,67 +20,70 @@ export default function ContactsContent() {
         <title>Contatos | Riniel</title>
       </Head>
 
-      <S.ContainerContacts>
-        <S.Contacts>
-          <S.divTitle>
-            <h1>Contatos</h1>
-            <span onClick={() => setVisible(!visible)} >{visible ? "Ocultar links" : "Mostrar links"}</span>
-          </S.divTitle>
-          <S.Ul>
-            {data.map((item) => (
-              <li>
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  <S.divItem>
-                    <div>{item.icon}</div>
-                    <span>{item.title}</span>
-                  </S.divItem>
+      <S.ContainerMain>
+        <S.ContainerContacts>
+          <S.Contacts>
+            <S.divTitle>
+              <h1>Contatos</h1>
+              <span onClick={() => setVisible(!visible)} >{visible ? "Ocultar links" : "Mostrar links"}</span>
+            </S.divTitle>
+            <S.Ul>
+              {data.map((item) => (
+                <li>
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <S.divItem>
+                      <div>{item.icon}</div>
+                      <span>{item.title}</span>
+                    </S.divItem>
 
-                  <S.divLink>
-                    <span style={{ opacity: visible ? 1 : 0 }}>{item.link}</span>
-                  </S.divLink>
-                </a>
+                    <S.divLink>
+                      <span style={{ opacity: visible ? 1 : 0 }}>{item.link}</span>
+                    </S.divLink>
+                  </a>
 
-                <S.iconCopy style={{ display: visible ? "flex" : "none" }}>
-                  <Icon icon="copy" />
-                </S.iconCopy>
-              </li>
-            ))}
-          </S.Ul>
-        </S.Contacts>
+                  <S.iconCopy style={{ display: visible ? "flex" : "none" }}>
+                    <Icon icon="copy" />
+                  </S.iconCopy>
+                </li>
+              ))}
+            </S.Ul>
+          </S.Contacts>
 
-        <S.Form>
-          <S.divTitle>
-            <h1>Mande uma mensagem</h1>
-          </S.divTitle>
+          <S.Form>
+            <S.divTitle>
+              <h1>Mande uma mensagem</h1>
+            </S.divTitle>
 
-          <S.Field>
-            <div>
-              <label htmlFor="">Nome:</label>
-              <input type="text" placeholder="Digite seu nome" />
-            </div>
+            <S.Fields>
+              <S.FieldUser>
+                <div>
+                  <label htmlFor="">Nome:</label>
+                  <input type="text" placeholder="Digite seu nome" />
+                </div>
 
-            <div>
-              <label htmlFor="">Email:</label>
-              <input type="email" placeholder="Digite seu email" />
-            </div>
-          </S.Field>
+                <div>
+                  <label htmlFor="">Email:</label>
+                  <input type="email" placeholder="Digite seu email" />
+                </div>
+              </S.FieldUser>
 
-          <S.divTextArea>
-            <div>
-              <label htmlFor="">Mensagem:</label>
-              <textarea name="" id="" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
-            </div>
+              <S.divTextArea>
+                <div>
+                  <label htmlFor="">Mensagem:</label>
+                  <textarea name="" id="" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+                </div>
 
-            <S.divSend>
-              <Button dark={true} content={<Icon icon="send" size={24}/>} children="Enviar" />
-            </S.divSend>
-          </S.divTextArea>
-
-        </S.Form>
-      </S.ContainerContacts>
+                <S.divSend>
+                  <Button dark={true} content={<Icon icon="send" size={24} />} children="Enviar" />
+                </S.divSend>
+              </S.divTextArea>
+            </S.Fields>
+          </S.Form>
+        </S.ContainerContacts>
+      </S.ContainerMain>
     </>
   );
 }

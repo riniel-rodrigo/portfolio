@@ -1,0 +1,48 @@
+[33mcommit f027a8d8c17ef803b38c0e632146e7e9f4515272[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Riniel <rinielrodrigo555@gmail.com>
+Date:   Thu Apr 18 07:38:51 2024 -0300
+
+    feat: create form section in contacts and update others functionalities
+
+[33mcommit db56bb3d153edb3c9a51587bdec8f143638eafb3[m
+Author: Riniel <rinielrodrigo555@gmail.com>
+Date:   Wed Apr 17 13:58:58 2024 -0300
+
+    feat: add icon
+
+[33mcommit dd25e207f796c27596082594efda64f414a5829f[m
+Author: Riniel <rinielrodrigo555@gmail.com>
+Date:   Wed Apr 17 11:57:14 2024 -0300
+
+    remove: .babelrc
+
+[33mcommit 4d65c18706c8705abd247a18b35395639083d1f6[m
+Merge: 5e9d9d8 ea0a052
+Author: Riniel <rinielrodrigo555@gmail.com>
+Date:   Wed Apr 17 11:41:13 2024 -0300
+
+    Merge branch 'main' of https://github.com/riniel-rodrigo/portfolio
+
+[33mcommit 5e9d9d81da3fc7215c6d55a617043fc98f3bd415[m
+Author: Riniel <rinielrodrigo555@gmail.com>
+Date:   Wed Apr 17 11:40:53 2024 -0300
+
+    perf: config document to next with styled-components, add babel
+
+[33mcommit ea0a052258789bc6c3d34a265fa00ad9014bf88e[m
+Author: Riniel <rinielrodrigo555@gmail.com>
+Date:   Wed Apr 17 07:15:39 2024 -0300
+
+    :books: clear readme
+
+[33mcommit 39b74230cb74e1e21f32976e8a83acbf3a0593ad[m
+Author: Riniel <rinielrodrigo555@gmail.com>
+Date:   Wed Apr 17 07:13:24 2024 -0300
+
+    first commit, feat: create header, aboutme, contact and some components
+
+[33mcommit 61426f3dd5be97807e44320d6b885a1b22188ebf[m
+Author: Riniel <rinielrodrigo555@gmail.com>
+Date:   Sun Apr 14 17:15:28 2024 -0300
+
+    Initial commit from Create Next App

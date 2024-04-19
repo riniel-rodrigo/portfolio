@@ -1,19 +1,26 @@
 import styled from "styled-components";
 
+export const ContainerMain = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 4rem;
+`;
+
 export const ContainerContacts = styled.div`
   display: flex;
-  justify-content: center;
-  gap: 12rem;
-  width: 100%;
-  height:85%;
-  padding-top: 5rem;
+  justify-content: space-between;
+  width: 75%;
+  flex-wrap: wrap-reverse;
 `;
 
 export const Contacts = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 30%;
+  width:28rem;
   height: 100%;
   /* border: solid 1px yellow; */
 `;
@@ -51,7 +58,7 @@ export const Ul = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap:1rem;
+  gap: 1rem;
   height: 100%;
 
   li {
@@ -107,19 +114,37 @@ export const iconCopy = styled.div`
   }
 `;
 
+//Estilização do Formulário//////////////////////////////
+
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 35%;
-  /* border: solid 1px yellow; */
+  
+  @media screen and (max-width: 1145px) {
+    width:100%;
+  }
 `;
 
-export const Field = styled.div`
+export const Fields = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width:75%;
+
+  @media screen and (max-width: 1145px) {
+    flex-direction:row;
+    justify-content:space-between;
+    width:100%;
+    gap:5rem;
+  }
+`;
+
+export const FieldUser = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 86%;
+
 
   div {
     display: flex;
@@ -127,29 +152,32 @@ export const Field = styled.div`
     gap: 0.4rem;
   }
 
-  input{
+  input {
     all: unset;
     padding: 0.6rem;
     color: #000;
     background-color: #f0ece6;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
+  }
+
+  @media screen and (max-width: 1145px) {
+    width:30rem;
   }
 `;
 
 export const divTextArea = styled.div`
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   gap: 0.8rem;
-  width:100%;
+  width: 100%;
 
-
-  div{
+  div {
     gap: 0.4rem;
     display: flex;
     flex-direction: column;
   }
 
-  textarea{
+  textarea {
     all: unset;
     padding: 0.6rem;
     height: 5rem;
@@ -160,10 +188,16 @@ export const divTextArea = styled.div`
     white-space: pre-wrap;
     word-wrap: break-word;
   }
+
+  @media screen and (max-width: 1145px) {
+    flex-direction:column;
+    justify-content:space-between;
+    width:30rem;
+  }
 `;
 
 export const divSend = styled.div`
   display: flex;
-  justify-content:end;
-  width:100%;
+  justify-content: end;
+  width: 100%;
 `;

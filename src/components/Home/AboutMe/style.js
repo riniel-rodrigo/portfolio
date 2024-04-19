@@ -7,6 +7,10 @@ export const Main = styled.div`
   align-items: center;
   width: 100%;
   margin-top: 6.5rem;
+
+  @media screen and (max-width: 860px) {
+    margin-top: 2rem;
+  }
 `;
 
 export const AboutmeDiv = styled.div`
@@ -28,6 +32,10 @@ export const AboutmeDiv = styled.div`
     gap: 1.5rem;
     width: 100%;
   }
+
+  @media screen and (max-width: 475px) {
+    width: 100%;
+  }
 `;
 
 export const AboutmeDivLeft = styled.div`
@@ -41,6 +49,10 @@ export const AboutmeDivLeft = styled.div`
     width: 90%;
     height: 21rem;
   }
+
+  @media screen and (max-width: 475px) {
+    width: 95%;
+  }
 `;
 
 export const InfoDiv = styled.div`
@@ -48,6 +60,16 @@ export const InfoDiv = styled.div`
   flex-direction: column;
   gap: 1rem;
   width: 90%;
+
+  @media screen and (max-width: 475px) {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 340px) {
+    width: 20rem;
+  }
 
   a {
     width: fit-content;
@@ -60,6 +82,7 @@ export const InfoDiv = styled.div`
     border: solid 1.75px #7e49d9;
     transition: all 0.3s ease;
   }
+
   a:hover {
     background-color: rgba(75, 85, 99, 0.1);
     border: solid 1.75px #7e49d9;
@@ -71,41 +94,88 @@ export const InfoDiv = styled.div`
     font-size: 2.25;
     font-weight: 500;
 
-    span {
-      font-size: 3.25rem;
-      font-weight: 600;
+    @media screen and (max-width: 475px) {
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 340px) {
+      white-space: nowrap;
+    }
+  }
+
+  span {
+    font-size: 3.25rem;
+    font-weight: 600;
+
+    @media screen and (max-width: 475px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  p {
+    @media screen and (max-width: 475px) {
+      text-align: center;
     }
   }
 `;
 
 export const BadgeDiv = styled.div`
-  
-  ul{
-    display:flex;
+  @media screen and (max-width: 475px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 340px) {
+    width: 22rem;
+  }
+
+  ul {
+    display: flex;
     align-items: center;
     gap: 0.75rem;
-    height:100%;
-
+    height: 100%;
   }
-  li{
+  li {
     padding: 0.4rem;
     border-radius: 0.375rem;
-    font-size:0.9rem;
+    font-size: 0.9rem;
   }
 `;
 
 export const AboutmeDivRight = styled.div`
-  .circle {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 30%;
+
+  @media screen and (max-width: 860px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 340px) {
+    width: 400px;
+    justify-self:end;
+  } 
+
+  & > * {
+    @media screen and (max-width: 475px) {
+      width:320px;
+      height:200px;
+    }
+  }
+  /* .circle {
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid #10002b;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    background-color:black;
   }
 
   .circle img {
     display: block;
     width: 100%;
     height: auto;
-  }
+  } */
 `;
- 
