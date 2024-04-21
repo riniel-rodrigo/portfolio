@@ -1,10 +1,12 @@
 import { IconContext } from 'react-icons';
 
-import { MdOutlineMail } from "react-icons/md";
+import { MdOutlineMail, MdMenu, MdOutlineMenuOpen } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub, FaWhatsapp} from "react-icons/fa";
 import { IoCopyOutline } from "react-icons/io5";
 import { LuSend } from "react-icons/lu";
+// import { RiMenuFoldFill } from "react-icons/ri";
+
 
 export default function Icon({ icon, color, size }) {
     const iconMapping = {
@@ -14,6 +16,8 @@ export default function Icon({ icon, color, size }) {
         whats: FaWhatsapp,
         copy: IoCopyOutline,
         send: LuSend,
+        menu: MdMenu,
+        menuClose: MdOutlineMenuOpen,
     };
 
     const IconComponent = iconMapping[icon];

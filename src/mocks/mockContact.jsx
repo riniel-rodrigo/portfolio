@@ -1,6 +1,6 @@
 import { v4 as uuid } from 'uuid';
 
-import Icon from "../components/icons/index.jsx";
+import Icon from "../components/commons/icons/index.jsx";
 
 export const mockContact = [
     {

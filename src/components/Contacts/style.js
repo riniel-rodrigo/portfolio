@@ -25,7 +25,7 @@ export const ContainerContacts = styled.div`
 
   @media screen and (max-width: 700px) {
     width: 87%;
-    gap:4rem;
+    gap: 4rem;
   }
 `;
 
@@ -35,8 +35,7 @@ export const Contacts = styled.div`
   gap: 2rem;
   width: 28rem;
   height: 100%;
-  
-  
+
   @media screen and (max-width: 1145px) {
     width: 100%;
   }
@@ -50,6 +49,18 @@ export const divTitle = styled.div`
   h1 {
     font-size: 2rem;
     font-weight: 500;
+
+    @media screen and (max-width: 450px) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 337px) {
+      font-size: 1.3rem;
+    }
+
+    @media screen and (max-width: 300px) {
+      text-align: center;
+    }
   }
 
   span {
@@ -62,6 +73,10 @@ export const divTitle = styled.div`
     border-radius: 0.3rem;
     border: solid 1.75px #7e49d9;
     transition: all 0.3s ease;
+
+    @media screen and (max-width: 450px) {
+      font-size: 0.6rem;
+    }
   }
 
   span:hover {
@@ -79,7 +94,7 @@ export const Ul = styled.ul`
   height: 100%;
 
   @media screen and (max-width: 1145px) {
-    width:25rem;
+    width: 25rem;
   }
 
   li {
@@ -113,36 +128,32 @@ export const divItem = styled.div`
 `;
 
 export const divLink = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  transition: all 0.3s ease;
+
+  @media screen and (max-width: 1145px) {
+    width: 15rem;
+  }
+
   span {
     font-size: 0.9rem;
-    text-decoration: underline;
     white-space: nowrap;
+    text-decoration: underline;
     overflow: hidden;
     text-overflow: ellipsis;
-    transition: opacity 0.3s ease-out;
-  }
-`;
-
-export const iconCopy = styled.div`
-  cursor: pointer;
-
-  & > * {
-    transition: all 0.3s ease;
-  }
-
-  & > *:hover {
-    color: #7e49d9;
   }
 `;
 
 export const divUlLetter = styled.div`
   display: flex;
-  justify-content:space-between;
-  gap:1rem;
+  justify-content: space-between;
+  gap: 1rem;
   width: 100%;
 
   @media screen and (max-width: 1145px) {
-    
   }
 `;
 
@@ -159,7 +170,6 @@ export const DivLetterImg = styled.div`
 `;
 
 //Estilização do Formulário//////////////////////////////
-
 export const Form = styled.form`
   display: flex;
   flex-direction: column;

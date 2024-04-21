@@ -36,6 +36,16 @@ export const LogoDiv = styled.div`
     color: #7e49d9;
     opacity: 0;
     transition: opacity 0.3s ease-out;
+
+    @media screen and (max-width: 500px) {
+    display: none;
+  }
+  }
+
+  img{
+    @media screen and (max-width: 500px) {
+      width:2.6994rem;
+  }
   }
 `;
 
@@ -44,8 +54,29 @@ export const Nav = styled.nav`
   align-items: center;
   gap: 2rem;
 
+  @media screen and (max-width: 475px) {
+    display: none;
+  }
+
   .Link2 {
     border: solid 1px #4007a2;
     border-radius: 0.5rem;
+  }
+`;
+
+export const MenuH = styled.div`
+  display: none;
+
+  @media screen and (max-width: 475px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+export const DivMenuH = styled.div`
+  & > * {
+    font-size: 2.1875rem;
+    color: #fff;
   }
 `;

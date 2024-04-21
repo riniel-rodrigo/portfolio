@@ -3,10 +3,13 @@ import Image from "next/image";
 import { useState } from "react";
 
 import { mockContact } from "../../mocks/mockContact.jsx";
-import Icon from "../icons/index.jsx";
+import Icon from "../commons/icons/index.jsx";
 import Button from "../commons/Button/index.jsx";
+import CopyButton from "../commons/CopyButton/index.jsx";
 
 import * as S from "./style.js"
+import { Transition } from "react-transition-group";
+
 
 export default function ContactsContent() {
 
@@ -41,14 +44,13 @@ export default function ContactsContent() {
                         <span>{item.title}</span>
                       </S.divItem>
 
-                      <S.divLink>
-                        <span style={{ opacity: visible ? 1 : 0 }}>{item.link}</span>
+                      <S.divLink style={{ opacity: visible ? 1 : 0 }}>
+                        <span >{item.link}</span>
                       </S.divLink>
                     </a>
-
-                    <S.iconCopy style={{ opacity: visible ? 1 : 0 }}>
-                      <Icon icon="copy" />
-                    </S.iconCopy>
+                    <div style={{ opacity: visible ? 1 : 0, transition: "all 0.3s ease" }}>
+                      <CopyButton textCopy={item.link} />
+                    </div>
                   </li>
                 ))}
               </S.Ul>
@@ -57,7 +59,6 @@ export default function ContactsContent() {
                 <Image src="/carta.png" width={250} height={250} alt="Ilustração de uma carta" />
               </S.DivLetterImg>
             </S.divUlLetter>
-
           </S.Contacts>
 
           <S.Form>

@@ -1,12 +1,14 @@
 
 import { Roboto } from "next/font/google";
 import { Rubik_Doodle_Shadow } from "next/font/google";
-
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import * as S from "./style";
+import { Menu } from "./Menu/Menu.jsx";
+import Icon from "../icons/index.jsx";
+
+import * as S from "./style.js";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -30,6 +32,16 @@ export default function Header() {
     setIsHovered(false);
   };
 
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const openMenu = useCallback(() => {
+    setMenuOpen(true);
+  }, []);
+
+  const closeMenu = useCallback(() => {
+    setMenuOpen(false);
+  }, []);
+
   return (
     <S.ContainerHeader>
       <S.Header className={roboto.className}>
@@ -39,12 +51,21 @@ export default function Header() {
             <span className={rubik.className} style={{ opacity: isHovered ? 1 : 0 }}>iniel</span>
           </S.LogoDiv>
         </Link>
-
+        
         <S.Nav>
           <Link href="/">Sobre mim</Link>
           {/* <Link href="/Contacts">Portfolio</Link> */}
           <Link href="/contacts">Fale comigo</Link>
         </S.Nav>
+
+        <S.MenuH onClick={openMenu}>
+          <S.DivMenuH>
+            <Icon icon="menu" size={35}/>
+          </S.DivMenuH>
+        </S.MenuH>
+
+        {menuOpen ? <Menu onClose={closeMenu} isVisible={openMenu}/> : ""}
+     
       </S.Header>
     </S.ContainerHeader>
   );
