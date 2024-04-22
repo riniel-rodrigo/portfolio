@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { Menu } from "./Menu/Menu.jsx";
 import Icon from "../icons/index.jsx";
+import { ActiveLink } from "./ActiveLink/ActiveLink.jsx";
 
 import * as S from "./style.js";
 
@@ -45,27 +46,29 @@ export default function Header() {
   return (
     <S.ContainerHeader>
       <S.Header className={roboto.className}>
-        <Link href="/">
+
+      <Link href="/">
           <S.LogoDiv onMouseEnter={handleMouseMove} onMouseLeave={handleMouseLeave}>
             <Image src="/icon.svg" width={55} height={55} alt="Logo Riniel, ícone" />
             <span className={rubik.className} style={{ opacity: isHovered ? 1 : 0 }}>iniel</span>
           </S.LogoDiv>
         </Link>
-        
+
+
         <S.Nav>
-          <Link href="/">Sobre mim</Link>
-          {/* <Link href="/Contacts">Portfolio</Link> */}
-          <Link href="/contacts">Fale comigo</Link>
+          <ActiveLink href="/" children="Sobre mim" />
+          {/* <ActiveLink href="/Projects" children="Projetos" /> */}
+          <ActiveLink href="/contacts" children="Fale comigo" />
         </S.Nav>
 
         <S.MenuH onClick={openMenu}>
           <S.DivMenuH>
-            <Icon icon="menu" size={35}/>
+            <Icon icon="menu" size={35} />
           </S.DivMenuH>
         </S.MenuH>
 
-        {menuOpen ? <Menu onClose={closeMenu} isVisible={openMenu}/> : ""}
-     
+        {menuOpen ? <Menu onClose={closeMenu} isVisible={openMenu} /> : ""}
+
       </S.Header>
     </S.ContainerHeader>
   );

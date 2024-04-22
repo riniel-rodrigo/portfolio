@@ -92,9 +92,13 @@ export const Ul = styled.ul`
   justify-content: space-between;
   gap: 1rem;
   height: 100%;
-
+  
   @media screen and (max-width: 1145px) {
     width: 25rem;
+  }
+
+  @media screen and (max-width: 4705px) {
+    width:100%;
   }
 
   li {
@@ -108,6 +112,7 @@ export const Ul = styled.ul`
     align-items: start;
     flex-direction: column;
     gap: 0.25rem;
+    width: 100%;
   }
 `;
 
@@ -134,8 +139,8 @@ export const divLink = styled.div`
   width: 100%;
   transition: all 0.3s ease;
 
-  @media screen and (max-width: 1145px) {
-    width: 15rem;
+  @media screen and (max-width: 450px) {
+    width: 100%;
   }
 
   span {
@@ -145,6 +150,10 @@ export const divLink = styled.div`
     overflow: hidden;
     text-overflow: ellipsis;
   }
+`;
+
+export const divLinkIcon = styled.div`
+  border:solid 2px yellow;
 `;
 
 export const divUlLetter = styled.div`

@@ -4,7 +4,9 @@ import * as S from "./style.js";
 
 export default function CopyButton({textCopy}) {
 
-    const handleCopy = () => {
+    const handleCopy = (event) => {
+        event.stopPropagation();
+        event.preventDefault()
         navigator.clipboard.writeText(textCopy);
     }
 

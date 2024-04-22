@@ -2,13 +2,14 @@ import Link from "next/link"
 import Image from "next/image"
 
 import Icon from "../../icons/index.jsx"
+import { ActiveLink } from "../ActiveLink/ActiveLink.jsx"
 
 import * as S from "./Menu.js"
 
-export const Menu = ({onClose, isVisible}) => {
+export const Menu = ({ onClose, isVisible }) => {
 
     return (
-        <S.ContainerMenu style={{display: isVisible ? "inherit" : "none"}} onClick={onClose}>
+        <S.ContainerMenu style={{ display: isVisible ? "inherit" : "none" }} onClick={onClose}>
             <S.MenuH onClick={(e) => e.stopPropagation()}>
                 <S.Icons>
                     <Link href="/">
@@ -19,11 +20,11 @@ export const Menu = ({onClose, isVisible}) => {
                     </span>
                 </S.Icons>
                 <S.Nav>
-                    <Link onClick={onClose} href="/">Sobre mim</Link>
-                    <Link onClick={onClose} href="/portfolio" >Portfolio</Link>
-                    <Link onClick={onClose} href="/contacts">Fale comigo</Link>
+                    <ActiveLink onClick={onClose} href="/" children="Sobre mim" />
+                    <ActiveLink onClick={onClose} href="/Projects" children="Projetos" />
+                    <ActiveLink onClick={onClose} href="/contacts" children="Fale comigo" />
                 </S.Nav>
             </S.MenuH>
         </S.ContainerMenu>
-    )
-}
+    );
+};
