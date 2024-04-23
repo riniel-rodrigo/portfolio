@@ -5,9 +5,9 @@ import { useCallback, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Menu } from "./Menu/Menu.jsx";
+import { Menu } from "./Menu/index.jsx";
 import Icon from "../icons/index.jsx";
-import { ActiveLink } from "./ActiveLink/ActiveLink.jsx";
+import { ActiveLink } from "./ActiveLink/index.jsx";
 
 import * as S from "./style.js";
 
@@ -47,9 +47,9 @@ export default function Header() {
     <S.ContainerHeader>
       <S.Header className={roboto.className}>
 
-      <Link href="/">
+        <Link href="/">
           <S.LogoDiv onMouseEnter={handleMouseMove} onMouseLeave={handleMouseLeave}>
-            <Image src="/icon.svg" width={55} height={55} alt="Logo Riniel, ícone" />
+            <Image src="/icon.svg" width={45} height={45} alt="Logo Riniel, ícone" />
             <span className={rubik.className} style={{ opacity: isHovered ? 1 : 0 }}>iniel</span>
           </S.LogoDiv>
         </Link>

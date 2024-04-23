@@ -2,9 +2,9 @@ import Link from "next/link"
 import Image from "next/image"
 
 import Icon from "../../icons/index.jsx"
-import { ActiveLink } from "../ActiveLink/ActiveLink.jsx"
+import { ActiveLink } from "../ActiveLink/index.jsx"
 
-import * as S from "./Menu.js"
+import * as S from "./style.js"
 
 export const Menu = ({ onClose, isVisible }) => {
 

@@ -13,12 +13,12 @@ export const Button = styled.span`
   background-color: #7e49d9;
   background-color: ${(props) => (props.dark ? "#202124" : "#7e49d9")};
   border-radius: 0.5rem;
-  border: solid 0.109rem #7e49d9;
+  border: solid 0.124rem #7e49d9;
   transition: all 0.3s ease;
   cursor: pointer;
 
   &:hover {
     background-color: ${(props) =>props.dark ? "#7e49d9" : "rgba(75, 85, 99, 0.1)"};
-    border: solid 0.109rem #7e49d9;
+    border: solid 0.124rem #7e49d9;
   }
 `;

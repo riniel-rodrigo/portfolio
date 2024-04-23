@@ -5,8 +5,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaGithub, FaWhatsapp} from "react-icons/fa";
 import { IoCopyOutline } from "react-icons/io5";
 import { LuSend } from "react-icons/lu";
-// import { RiMenuFoldFill } from "react-icons/ri";
-
+import { PiFilePdfLight } from "react-icons/pi";
 
 export default function Icon({ icon, color, size }) {
     const iconMapping = {
@@ -18,6 +17,7 @@ export default function Icon({ icon, color, size }) {
         send: LuSend,
         menu: MdMenu,
         menuClose: MdOutlineMenuOpen,
+        pdf: PiFilePdfLight,
     };
 
     const IconComponent = iconMapping[icon];

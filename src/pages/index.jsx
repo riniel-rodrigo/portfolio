@@ -1,8 +1,8 @@
 import Head from "next/head";
-import AboutMe from "@/components/Home/AboutMe/index.jsx";
-import {favicon} from "../../public/icon.svg";
+import  HomePage  from "@/components/Home/index.jsx";
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -10,7 +10,8 @@ export default function Home() {
         <meta name="description" content="Sou um desenvolvedor apaixonado por criar e explorar o vasto mundo da tecnologia!" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </Head>
-      <AboutMe />
+      <HomePage />
+      {/* <Projects /> */}
     </>
   );
 }
