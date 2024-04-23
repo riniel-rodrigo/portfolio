@@ -13,7 +13,7 @@ export const Menu = ({ onClose, isVisible }) => {
             <S.MenuH onClick={(e) => e.stopPropagation()}>
                 <S.Icons>
                     <Link href="/">
-                        <Image src="/icon.svg" width={43.2} height={55} alt="Logo Riniel, ícone" />
+                        <Image src="/icon.svg" width={45} height={45} alt="Logo Riniel, ícone" />
                     </Link>
                     <span onClick={onClose}>
                         <Icon icon="menuClose" color="#fff" size={35} />

@@ -11,7 +11,7 @@ export const Projects = () => {
 
   return (
     <S.Article>
-      <h1>Projetos Recentes</h1>
+      <h1>Projetos</h1>
 
       <S.Ul>
         {data.map((item, index) => (

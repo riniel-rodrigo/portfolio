@@ -4,8 +4,13 @@ export const Article = styled.article`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  width: 90%;
-  max-width:90rem;
+  width: 85%;
+  max-width: 90rem;
+
+  @media screen and (max-width: 873px) {
+    justify-content: center;
+    align-items: center;
+  }
 
   h1 {
     font-size: 2rem;
@@ -17,6 +22,11 @@ export const Ul = styled.ul`
   display: flex;
   gap: 4rem;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 873px) {
+    justify-content: center;
+    align-items: center;
+  }
 
   li {
     display: flex;
@@ -39,7 +49,7 @@ export const Ul = styled.ul`
       @media screen and (min-width: 1366px) {
         width: 18.75rem;
         height: 18.75rem;
-    }
+      }
     }
   }
 `;
@@ -47,12 +57,12 @@ export const Ul = styled.ul`
 export const divIndex = styled.div`
   display: flex;
   justify-content: center;
-  align-items:center;
-  position:absolute;
+  align-items: center;
+  position: absolute;
   bottom: 1.25rem;
-  right:-1.25rem;
-  width:3rem;
-  height:3rem;
+  right: -1.25rem;
+  width: 3rem;
+  height: 3rem;
   font-size: 1.5rem;
   background-color: #7e49d9;
   border-radius: 0.75rem;

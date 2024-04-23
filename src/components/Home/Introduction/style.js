@@ -9,7 +9,7 @@ export const AboutmeDiv = styled.div`
   max-width: 75rem;
 
   @media screen and (max-width: 1280px) {
-    width: 90%;
+    width: 85%;
     gap: 1rem;
   }
 
@@ -17,11 +17,7 @@ export const AboutmeDiv = styled.div`
     flex-wrap: wrap-reverse;
     justify-content: center;
     gap: 1.5rem;
-    width: 100%;
-  }
-
-  @media screen and (max-width: 475px) {
-    width: 100%;
+    width: 85%;
   }
 `;
 
@@ -29,14 +25,6 @@ export const AboutmeDivLeft = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-
-  @media screen and (max-width: 860px) {
-    width: 90%;
-  }
-
-  @media screen and (max-width: 475px) {
-    width: 95%;
-  }
 `;
 
 export const InfoDiv = styled.div`
@@ -45,47 +33,43 @@ export const InfoDiv = styled.div`
   gap: 1rem;
   width: 100%;
 
-  @media screen and (max-width: 475px) {
+  @media screen and (max-width: 400px) {
     justify-content: center;
     align-items: center;
-    width: 100%;
-  }
-
-  @media screen and (max-width: 340px) {
-    width: 20rem;
   }
 
   h1 {
     display: flex;
     flex-direction: column;
-    font-size: 2.25;
+    font-size: 2.25rem;
     font-weight: 500;
 
-    @media screen and (max-width: 475px) {
-      justify-content: center;
-      align-items: center;
+    @media screen and (max-width: 600px) {
+      font-size: 1.5rem;
     }
 
-    @media screen and (max-width: 340px) {
-      white-space: nowrap;
+    @media screen and (max-width: 400px) {
+      text-align: center;
     }
 
     span {
       font-size: 3rem;
       font-weight: 500;
 
-      @media screen and (max-width: 475px) {
-        font-size: 2.5rem;
+      @media screen and (max-width: 600px) {
+        font-size: 2rem;
       }
     }
   }
 
   p {
     line-height: 1.5rem;
-    max-width:45rem;
-    font-weight:300;
+    max-width: 45rem;
+    font-weight: 300;
+    text-align: justify;
+
     @media screen and (max-width: 475px) {
-      text-align: center;
+      text-align: justify;
     }
   }
 
@@ -102,17 +86,39 @@ export const AboutmeDivRight = styled.div`
   width: 20rem;
 
   @media screen and (max-width: 860px) {
+    position: relative;
     width: 100%;
-  }
-  @media screen and (max-width: 340px) {
-    justify-self: end;
-    width: 400px;
+    height: 100%;
   }
 
-  & > * {
-    @media screen and (max-width: 475px) {
-      width: 320px;
-      height: 200px;
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
+
+  div {
+    @media screen and (max-width: 860px) {
+      position: absolute;
+      top: 1rem;
+      right: -2rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      top: -1rem;
+      right: -3rem;
+    }
+  }
+
+  div img {
+    object-fit: cover;
+
+    @media screen and (max-width: 1024px) {
+      width: 23rem;
+      height: 15rem;
+
+      @media screen and (max-width: 860px) {
+        width: 12rem;
+        height: 7rem;
+      }
     }
   }
 `;

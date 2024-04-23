@@ -11,5 +11,6 @@ export const Main = styled.div`
 
   @media screen and (max-width: 860px) {
     margin-top: 2rem;
+    gap:5rem;
   }
 `;
