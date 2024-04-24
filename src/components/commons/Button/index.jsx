@@ -1,10 +1,15 @@
-import * as S from './style.js';
+import * as S from "./style.js";
+import { useTheme } from "../Context/ThemeContext.jsx";
 
+export default function Button({ content, dark, children, PaddingSm }) {
+    const { BackgroundTheme } = useTheme();
 
-export default function Button({content, dark, children}){
-
-    return(
-        <S.Button dark={dark} >{content} {children} </S.Button>
-    )
-
+    return (
+        <S.Button
+            PaddingSm={PaddingSm}
+            BackgroundTheme={BackgroundTheme}
+            dark={dark}>
+            {content} {children}
+        </S.Button>
+    );
 }

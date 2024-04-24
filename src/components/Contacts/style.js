@@ -63,10 +63,32 @@ export const divTitle = styled.div`
     }
   }
 
-  span {
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: fit-content;
-    padding: 0.4rem;
-    margin-top: 0.5rem;
+    margin-top: 0.4rem;
+    @media screen and (max-width: 337px) {
+      margin-top: 0.3rem;
+    }
+
+    :hover {
+      color: #7e49d9;
+      cursor: pointer;
+    }
+
+    & > * {
+      transition:all 0.3s ease;
+      font-size:1.563rem;
+      @media screen and (max-width: 337px) {
+        font-size: 1.3rem;
+      }
+    }
+
+
+
+    /* padding: 0.4rem;
     font-size: 0.8rem;
     font-weight: 500;
     background-color: #202124;
@@ -76,14 +98,14 @@ export const divTitle = styled.div`
 
     @media screen and (max-width: 450px) {
       font-size: 0.6rem;
-    }
+    } */
   }
 
-  span:hover {
+  /* span:hover {
     background-color: #7e49d9;
     border: solid 1.75px #7e49d9;
     cursor: pointer;
-  }
+  } */
 `;
 
 export const Ul = styled.ul`
@@ -92,13 +114,13 @@ export const Ul = styled.ul`
   justify-content: space-between;
   gap: 1rem;
   height: 100%;
-  
+
   @media screen and (max-width: 1145px) {
     width: 25rem;
   }
 
   @media screen and (max-width: 4705px) {
-    width:100%;
+    width: 100%;
   }
 
   li {
@@ -153,7 +175,7 @@ export const divLink = styled.div`
 `;
 
 export const divLinkIcon = styled.div`
-  border:solid 2px yellow;
+  border: solid 2px yellow;
 `;
 
 export const divUlLetter = styled.div`

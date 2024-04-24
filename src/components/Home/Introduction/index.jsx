@@ -27,7 +27,6 @@ export const Introduction = () => {
             </Link>
           </div>
         </S.InfoDiv>
-
       </S.AboutmeDivLeft>
 
       <S.AboutmeDivRight>

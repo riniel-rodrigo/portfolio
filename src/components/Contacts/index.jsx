@@ -24,9 +24,9 @@ export default function ContactsContent() {
           <S.Contacts>
             <S.divTitle>
               <h1>Contatos</h1>
-              <span onClick={() => setVisible(!visible)}>
-                {visible ? "Ocultar links" : "Mostrar links"}
-              </span>
+              <div onClick={() => setVisible(!visible)}>
+                {visible ?  <Icon icon="eyeOff" /> : <Icon icon="eye" />}
+              </div>
             </S.divTitle>
 
             <S.divUlLetter>
@@ -56,7 +56,7 @@ export default function ContactsContent() {
                   alt="Ilustração de uma carta"
                 />
               </S.DivLetterImg>
-   
+
             </S.divUlLetter>
           </S.Contacts>
 

@@ -8,6 +8,7 @@ import Link from "next/link";
 import { Menu } from "./Menu/index.jsx";
 import Icon from "../icons/index.jsx";
 import { ActiveLink } from "./ActiveLink/index.jsx";
+import { useTheme } from "../Context/ThemeContext.jsx"
 
 import * as S from "./style.js";
 
@@ -21,7 +22,9 @@ const rubik = Rubik_Doodle_Shadow({
   weight: "400",
 });
 
-export default function Header() {
+export default function Header({ onClick }) {
+
+  const { BackgroundTheme } = useTheme();
 
   const [isHovered, setIsHovered] = useState(false);
 
@@ -43,6 +46,12 @@ export default function Header() {
     setMenuOpen(false);
   }, []);
 
+  const [iconLight, setIconLight] = useState(true);
+
+  const toggleIconTheme = () => {
+    setIconLight(!iconLight);
+  }
+
   return (
     <S.ContainerHeader>
       <S.Header className={roboto.className}>
@@ -56,16 +65,26 @@ export default function Header() {
 
 
         <S.Nav>
-          <ActiveLink href="/" children="Sobre mim" />
-          {/* <ActiveLink href="/Projects" children="Projetos" /> */}
-          <ActiveLink href="/contacts" children="Fale comigo" />
-        </S.Nav>
+          <S.NavLink>
+            <ActiveLink href="/" children="Sobre mim" />
+            {/* <ActiveLink href="/Projects" children="Projetos" /> */}
+            <ActiveLink href="/contacts" children="Fale comigo" />
+          </S.NavLink>
 
-        <S.MenuH onClick={openMenu}>
-          <S.DivMenuH>
-            <Icon icon="menu" size={35} />
-          </S.DivMenuH>
-        </S.MenuH>
+          <S.divThemeIcon onClick={() => { toggleIconTheme(); onClick(); }}>
+            {iconLight ? (
+              <Icon icon="sun" />
+            ) : (
+              <Icon icon="moon" />
+            )}
+          </S.divThemeIcon>
+
+          <S.MenuH onClick={openMenu}>
+            <S.DivMenuH BackgroundTheme={BackgroundTheme}>
+              <Icon icon="menu" size={35} />
+            </S.DivMenuH>
+          </S.MenuH>
+        </S.Nav>
 
         {menuOpen ? <Menu onClose={closeMenu} isVisible={openMenu} /> : ""}
 

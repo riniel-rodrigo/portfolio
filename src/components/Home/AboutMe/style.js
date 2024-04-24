@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContainerAboutMe = styled.div`
   display: flex;
-  gap: 5rem;
+  gap: 4rem;
   width: 80%;
   max-width: 77rem;
 

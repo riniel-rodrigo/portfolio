@@ -33,7 +33,7 @@ export const InfoDiv = styled.div`
   gap: 1rem;
   width: 100%;
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 420px) {
     justify-content: center;
     align-items: center;
   }
@@ -48,7 +48,7 @@ export const InfoDiv = styled.div`
       font-size: 1.5rem;
     }
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 420px) {
       text-align: center;
     }
 
@@ -91,7 +91,7 @@ export const AboutmeDivRight = styled.div`
     height: 100%;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 420px) {
     display: none;
   }
 
@@ -104,7 +104,6 @@ export const AboutmeDivRight = styled.div`
 
     @media screen and (max-width: 600px) {
       top: -1rem;
-      right: -3rem;
     }
   }
 

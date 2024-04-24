@@ -61,7 +61,7 @@ export const AboutMe = () => {
           {view === true ? (
             <>
               <p>
-                Em 2023, decidi me aprofundar verdadeiramente na área, retomando
+                Em meados de 2023, decidi me aprofundar verdadeiramente na área, retomando
                 meus estudos com foco em C# e desenvolvimento web. Atualmente,
                 estou cursando Análise e Desenvolvimento de Sistemas na
                 PUC-MINAS e também participando de outros cursos relacionados.
@@ -76,7 +76,7 @@ export const AboutMe = () => {
           ) : (
             <S.P>
               <p>
-                Em 2023, decidi me aprofundar verdadeiramente na área, retomando
+                Em meados de 2023, decidi me aprofundar verdadeiramente na área, retomando
                 meus estudos..
               </p>
             </S.P>

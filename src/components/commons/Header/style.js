@@ -4,23 +4,23 @@ import { theme } from "../../../styles/theme.js";
 export const ContainerHeader = styled.header`
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 20;
-  padding: 0.3rem 0;
+  padding: 0.5rem 0 0.3rem 0;
   width: 100%;
   backdrop-filter: blur(0.094rem);
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1900' height='54.59' preserveAspectRatio='none' viewBox='0 0 1900 54.59'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1105%26quot%3b)' fill='none'%3e%3crect width='1900' height='54.59' x='0' y='0' fill='rgba(32%2c 33%2c 36%2c 0.84)'%3e%3c/rect%3e%3cpath d='M1351.5687250230108 42.6955953809272L1364.8389270838159 36.802468080752526 1354.7021119512651 29.16382998247565z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M911.8576917953039 5.363796601477516L906.0553882981486 7.249079291224363 911.7844640813465 15.00989319208397z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1421.8421957099881 54.5631598676313L1423.355783800044 47.44228776580681 1411.9176816022793 48.73234168163536z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M436.22227866788995 16.41718363062999L438.7935403891602 27.554541742782618 447.3596367800426 13.84592190935969z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1680.440788053382 20.389849462770066L1691.263356843928 20.211257934572707 1686.53239920847 12.016998941503388z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M261.6265133305231 5.641304519848351L249.23979941472743 3.667339005046752 252.9899024289904 13.970662357362981z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1510.3540774734954 8.005871809483452L1517.7021279216965 14.393434612909157 1516.741640276921 0.6578213612824522z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1010.7185483135312 11.782780992225405L1000.703712405042 14.844623599224484 1010.3038942697851 28.335956158458803z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1002.6768521114509 21.3204586361099L991.6994154425073 16.432988939938433 997.7893824152794 32.297895305053494z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1537.1173159344269 36.17818332343203L1542.7558510375536 44.23084599190798 1552.0155774887041 31.746712002979834z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M17.53332481995153 14.757839390944776L5.5203773979806865 12.2044085914079 14.979894020414655 26.77078681291562z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1512.7444635881297 52.27543000868104L1517.279735553249 38.317298145020814 1498.7863317244696 47.740158043561706z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M238.24317749718114 25.957697115100423L246.66619278197442 41.18743067511591 254.72819967391362 28.28552267257864z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1144.9246752974286 58.55970569217394L1150.4186719646857 42.65324222983713 1135.931375828121 45.20774341622699z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M153.0415891171121 41.59550792156078L144.25196825038842 43.463799511374646 154.90988070692595 50.38512878828445z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1105'%3e%3crect width='1900' height='54.59' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1900' height='54.59' preserveAspectRatio='none' viewBox='0 0 1900 54.59'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3cpath d='M282.9601298166351 12.29260942618094L278.286520945471 18.274555992970793 289.59624523123784 22.29399601632204z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M893.471321662683 23.0450728730151L882.5962132927054 29.059702325535284 891.8090893521688 34.816546218033174z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M204.65343070007808 20.837202647042986L202.45386116958414 38.61120550364392 216.9696617380455 32.74644138499266z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M259.9061469600058 20.868205074329705L254.47602239020569 27.339575538623087 266.8981403715458 32.24907716117658z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M675.9684991138687 17.92275307620561L662.1379418584846 21.62863972365819 679.6743857613212 31.75331033158973z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1087.7185438836914 45.2561794526041L1094.4367777171656 28.67348528056161 1078.9130159205451 30.579563556320963z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1366.0662190841874 30.615315430613848L1362.4438688147284 40.02504673019781 1371.1721140731431 38.79837185609302z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M150.4314826370708 28.02661438947814L145.24468736086936 36.65889134681275 159.06375959440538 33.21340966567956z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1111.1080057764616 3.173963307622153L1106.0981561535712 10.888455215890751 1118.8224976847303 8.183812930512534z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1014.4042424445615 17.404753755490862L1007.1387769987168 18.168384945025565 1011.9169565059412 28.684767519025264z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1611.3658555908994 38.429242578563255L1623.2022788166744 36.56609890750799 1616.7536591703033 28.312242151939234z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M39.16302634656854 42.633664996551325L46.283640547015196 45.95406192898683 47.703928845445134 33.612942162099095z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1855.5612130464706 46.04534576048019L1858.2370598325374 30.869864530576777 1840.3857318165672 43.36949897441333z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1254.256881083454 5.594936002652936L1248.8190208928895 12.075525420783213 1261.2588351153672 16.992020997564822z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1875.609976107887 27.977248166457713L1869.1766810493004 35.377907556186756 1883.4943176631873 41.32752044920211z' fill='rgba(126%2c 73%2c 217%2c 0.65)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='1900' height='54.59' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
 `;
 
 export const Header = styled.header`
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   width: 75%;
-  height:100%;
+  height: 100%;
 
   @media screen and (max-width: 1280px) {
     width: 85%;
@@ -33,36 +33,63 @@ export const LogoDiv = styled.div`
   transition: all transform 0.3s ease;
 
   span {
-    height:45px;
+    height: 45px;
     font-size: 2.5rem;
     color: #7e49d9;
     opacity: 0;
     transition: opacity 0.3s ease-out;
 
     @media screen and (max-width: 500px) {
-    display: none;
-  }
+      display: none;
+    }
   }
 
-  img{
+  img {
     @media screen and (max-width: 500px) {
-      width:2.6994rem;
-  }
+      width: 2.6994rem;
+    }
   }
 `;
 
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
+  justify-self: flex-end;
   gap: 2rem;
+
+  @media screen and (max-width: 475px) {
+    gap: 1.5rem;
+  }
+`;
+
+export const NavLink = styled.div`
+  display: flex;
+  gap: 2rem;
+  height: 100%;
 
   @media screen and (max-width: 475px) {
     display: none;
   }
+`;
 
-  .Link2 {
-    border: solid 1px #4007a2;
-    border-radius: 0.5rem;
+export const divThemeIcon = styled.div`
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  & > * {
+    transition: all 0.3s ease;
+    font-size: 1.3rem;
+
+    &:hover {
+      cursor: pointer;
+      color: #7e49d9;
+    }
+
+    @media screen and (max-width: 475px) {
+      margin-bottom:0.2rem;
+    }
+
   }
 `;
 
@@ -70,15 +97,13 @@ export const MenuH = styled.div`
   display: none;
 
   @media screen and (max-width: 475px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
   }
 `;
 
 export const DivMenuH = styled.div`
   & > * {
     font-size: 2.1875rem;
-    color: #fff;
+    color: ${(props) => (props.BackgroundTheme === "light" ? "#000" : "#fff")};
   }
 `;

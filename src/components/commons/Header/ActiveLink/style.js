@@ -11,7 +11,7 @@ export const StyledLink = styled.div`
     left: 0;
     width: ${(props) => (props.isActive ? "100%" : "0")};
     height: 0.0625em;
-    background-color: #dcdcdd;
+    background-color: #7e49d9;
     transition: all 0.5s ease;
   }
 `;
