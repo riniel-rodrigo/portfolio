@@ -4,6 +4,7 @@ import Image from "next/image"
 import Icon from "../../icons/index.jsx"
 import { ActiveLink } from "../ActiveLink/index.jsx"
 import { useTheme } from "../../Context/ThemeContext.jsx"
+import { ThemeButton } from "../ThemeButton/index.jsx"
 
 import * as S from "./style.js"
 
@@ -17,9 +18,12 @@ export const Menu = ({ onClose, isVisible }) => {
                     <Link href="/">
                         <Image src="/icon.svg" width={43.19} height={45} alt="Logo Riniel, ícone" />
                     </Link>
-                    <span onClick={onClose}>
-                        <Icon icon="menuClose" color="#fff" size={35} />
-                    </span>
+                    <S.divRight>
+                        <ThemeButton />
+                        <span onClick={onClose}>
+                            <Icon icon="menuClose" size={35} />
+                        </span>
+                    </S.divRight>
                 </S.Icons>
                 <S.Nav>
                     <ActiveLink onClick={onClose} href="/" children="Sobre mim" />

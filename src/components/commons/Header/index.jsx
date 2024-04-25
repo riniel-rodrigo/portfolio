@@ -6,11 +6,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Menu } from "./Menu/index.jsx";
-import Icon from "../icons/index.jsx";
 import { ActiveLink } from "./ActiveLink/index.jsx";
 import { useTheme } from "../Context/ThemeContext.jsx"
+import { ThemeButton } from "./ThemeButton/index.jsx";
+import Icon from "../icons/index.jsx";
 
 import * as S from "./style.js";
+
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -22,7 +24,7 @@ const rubik = Rubik_Doodle_Shadow({
   weight: "400",
 });
 
-export default function Header({ onClick }) {
+export default function Header() {
 
   const { BackgroundTheme } = useTheme();
 
@@ -46,12 +48,6 @@ export default function Header({ onClick }) {
     setMenuOpen(false);
   }, []);
 
-  const [iconLight, setIconLight] = useState(true);
-
-  const toggleIconTheme = () => {
-    setIconLight(!iconLight);
-  }
-
   return (
     <S.ContainerHeader BackgroundTheme={BackgroundTheme} >
       <S.Header className={roboto.className}>
@@ -63,7 +59,6 @@ export default function Header({ onClick }) {
           </S.LogoDiv>
         </Link>
 
-
         <S.Nav>
           <S.NavLink>
             <ActiveLink href="/" children="Sobre mim" />
@@ -71,13 +66,9 @@ export default function Header({ onClick }) {
             <ActiveLink href="/contacts" children="Fale comigo" />
           </S.NavLink>
 
-          <S.divThemeIcon onClick={() => { toggleIconTheme(); onClick(); }}>
-            {iconLight ? (
-              <Icon icon="sun" />
-            ) : (
-              <Icon icon="moon" />
-            )}
-          </S.divThemeIcon>
+
+          <ThemeButton />
+
 
           <S.MenuH onClick={openMenu}>
             <S.DivMenuH BackgroundTheme={BackgroundTheme}>

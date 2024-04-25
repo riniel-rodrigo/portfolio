@@ -11,16 +11,12 @@ const montserrat = Montserrat({
 });
 
 export default function Layout({ children }) {
-  const { BackgroundTheme, setBackgroundTheme } = useTheme();
-
-  const toggleTheme = () => {
-    BackgroundTheme === "light" ? setBackgroundTheme("dark") : setBackgroundTheme("light");
-  }
+  const { BackgroundTheme } = useTheme();
 
   return (
     <ThemeProvider theme={BackgroundTheme === "light" ? lighTheme : darkTheme}>
       <div className={montserrat.className}>
-        <Header onClick={() => toggleTheme()}/>
+        <Header />
         {children}
       </div>
     </ThemeProvider>

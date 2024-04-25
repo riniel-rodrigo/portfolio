@@ -85,25 +85,7 @@ export const divTitle = styled.div`
         font-size: 1.3rem;
       }
     }
-
-    /* padding: 0.4rem;
-    font-size: 0.8rem;
-    font-weight: 500;
-    background-color: #202124;
-    border-radius: 0.3rem;
-    border: solid 1.75px #7e49d9;
-    transition: all 0.3s ease;
-
-    @media screen and (max-width: 450px) {
-      font-size: 0.6rem;
-    } */
   }
-
-  /* span:hover {
-    background-color: #7e49d9;
-    border: solid 1.75px #7e49d9;
-    cursor: pointer;
-  } */
 `;
 
 export const Ul = styled.ul`
@@ -112,15 +94,14 @@ export const Ul = styled.ul`
   justify-content: space-between;
   gap: 1.8rem;
   height: 100%;
-  
-  @media screen and (max-width: 4705px) {
-    width: 100%;
-  }
+  width:100%;
+
 
   li {
     display: flex;
     align-items: end;
     gap: 0.5rem;
+    width:100%;
   }
 
   li a {
@@ -128,6 +109,7 @@ export const Ul = styled.ul`
     align-items: start;
     flex-direction: column;
     gap: 0.25rem;
+    width:100%;
   }
 `;
 
@@ -154,10 +136,6 @@ export const divLink = styled.div`
   width: 100%;
   transition: all 0.3s ease;
 
-  @media screen and (max-width: 450px) {
-    width: 100%;
-  }
-
   span {
     font-size: 0.9rem;
     white-space: nowrap;
@@ -175,17 +153,18 @@ export const divUlLetter = styled.div`
 `;
 
 export const DivLetterImg = styled.div`
-  display:flex;
-  align-items:start;
-  @media screen and (max-width: 700px) {
-    display: none;
-  }
+  display: flex;
+  align-items: start;
 
   & > * {
     @media screen and (max-width: 1145px) {
       width: 15.625rem;
       height: 15.625rem;
     }
+  }
+
+  @media screen and (max-width: 700px) {
+    display: none;
   }
 `;
 
@@ -207,7 +186,6 @@ export const Form = styled.form`
 export const Fields = styled.div`
   display: flex;
   gap: 5rem;
-
   width: 100%;
 
   @media screen and (max-width: 1145px) {
@@ -251,8 +229,17 @@ export const FieldUser = styled.div`
     color: #000;
     background-color: #f0ece6;
     border-radius: 0.4rem;
-    background-color: #ffffff;
+    border: solid 1px #fff;
+    background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+
+    &:focus,
+    &:active {
+      box-shadow: 0 4px 6px rgba(126, 73, 217, 0.3),
+        0 1px 3px rgba(126, 73, 217, 1);
+      border: solid 1px #7e49d9;
+    }
   }
 `;
 
@@ -289,8 +276,17 @@ export const divTextArea = styled.div`
     overflow-y: auto;
     white-space: pre-wrap;
     word-wrap: break-word;
-    background-color: #ffffff;
+    border: solid 1px #fff;
+    background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+
+    &:focus,
+    &:active {
+      box-shadow: 0 4px 6px rgba(126, 73, 217, 0.3),
+        0 1px 3px rgba(126, 73, 217, 1);
+      border: solid 1px #7e49d9;
+    }
   }
 `;
 
