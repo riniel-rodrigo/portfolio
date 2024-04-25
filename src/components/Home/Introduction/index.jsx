@@ -26,12 +26,21 @@ export const Introduction = () => {
               <Button dark content="Currículo" children={<Icon icon="pdf" size={19} />} />
             </Link>
           </div>
+
+          <S.divIcons>
+            <Link href="https://www.linkedin.com/in/riniel-rodrigo/" target="_blank">
+              <Icon icon="linkedin" size={38} />
+            </Link>
+            <Link href="https://github.com/riniel-rodrigo" target="_blank">
+              <Icon icon="github" size={36} />
+            </Link>
+          </S.divIcons>
         </S.InfoDiv>
       </S.AboutmeDivLeft>
 
       <S.AboutmeDivRight>
         <div>
-          <Image src={avatar} alt="Foto de perfil Riniel" unoptimized width={450} height={300} />
+          <Image src={avatar} alt="Avatar Riniel - Saudações" unoptimized width={450} height={300} />
         </div>
       </S.AboutmeDivRight>
     </S.AboutmeDiv>

@@ -79,6 +79,17 @@ export const InfoDiv = styled.div`
   }
 `;
 
+export const divIcons = styled.div`
+  & > * {
+    :hover{
+      cursor: pointer;
+      color: #7e49d9;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+`;
+
 export const AboutmeDivRight = styled.div`
   display: flex;
   justify-content: center;
