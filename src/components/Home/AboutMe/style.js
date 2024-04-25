@@ -4,6 +4,7 @@ export const ContainerAboutMe = styled.div`
   display: flex;
   gap: 4rem;
   width: 80%;
+  height:110%;
   max-width: 77rem;
 
   @media screen and (max-width: 1280px) {
@@ -13,6 +14,7 @@ export const ContainerAboutMe = styled.div`
   @media screen and (max-width: 1024px) {
     width: 95%;
     gap: 2rem;
+    min-height:rem;
   }
 
   @media screen and (max-width: 860px) {
@@ -23,10 +25,10 @@ export const ContainerAboutMe = styled.div`
 
 export const divLeft = styled.div`
   display: flex;
+  padding-top:2rem;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 2rem;
+  align-items: center;
 
   .circle {
     border-radius: 50%;
@@ -37,6 +39,7 @@ export const divLeft = styled.div`
   }
 
   img {
+    
     @media screen and (max-width: 1024px) {
       width: 15.625rem;
       height: 15.625rem;
@@ -54,22 +57,52 @@ export const divLeft = styled.div`
   }
 `;
 
+export const BadgeDiv = styled.div`
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 475px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    height: 100%;
+
+    @media screen and (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
+  }
+  li {
+    padding: 0.4rem;
+    border-radius: 0.375rem;
+    font-size: 0.9rem;
+  }
+`;
+
 export const divRight = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding-top:1.8rem;
   text-align: justify;
 
   h1 {
     font-size: 2rem;
     font-weight: 500;
+    text-align: center;
 
     @media screen and (max-width: 1024px) {
       text-align: center;
-    }
-
-    @media screen and (max-width: 600px) {
-      font-size: 2rem;
     }
   }
 
@@ -105,37 +138,5 @@ export const viewMoreDiv = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-`;
-
-export const BadgeDiv = styled.div`
-  @media screen and (max-width: 1024px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media screen and (max-width: 475px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
-    height: 100%;
-
-    @media screen and (max-width: 1024px) {
-      flex-wrap: wrap;
-    }
-  }
-  li {
-    padding: 0.4rem;
-    border-radius: 0.375rem;
-    font-size: 0.9rem;
   }
 `;

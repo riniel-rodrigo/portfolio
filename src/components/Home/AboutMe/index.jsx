@@ -25,8 +25,8 @@ export const AboutMe = () => {
         <Image
           className="circle"
           src="https://avatars.githubusercontent.com/u/80684745?v=4"
-          width={320}
-          height={320}
+          width={275}
+          height={275}
           unoptimized
         />
 

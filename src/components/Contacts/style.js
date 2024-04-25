@@ -6,17 +6,19 @@ export const ContainerMain = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 4rem;
+  margin-top: 6.5rem;
 `;
 
 export const ContainerContacts = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
   width: 75%;
-  flex-wrap: wrap-reverse;
 
-  @media screen and (max-width: 1145px) {
-    gap: 2rem;
+  @media screen and (max-width: 1280px) {
+    width: 85%;
   }
 
   @media screen and (max-width: 1024px) {
@@ -33,17 +35,15 @@ export const Contacts = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 28rem;
   height: 100%;
-
-  @media screen and (max-width: 1145px) {
-    width: 100%;
-  }
+  width: 100%;
+  max-width: 75rem;
 `;
 
 export const divTitle = styled.div`
   display: flex;
   align-items: center;
+  width: 100%;
   gap: 1rem;
 
   h1 {
@@ -79,14 +79,12 @@ export const divTitle = styled.div`
     }
 
     & > * {
-      transition:all 0.3s ease;
-      font-size:1.563rem;
+      transition: all 0.3s ease;
+      font-size: 1.563rem;
       @media screen and (max-width: 337px) {
         font-size: 1.3rem;
       }
     }
-
-
 
     /* padding: 0.4rem;
     font-size: 0.8rem;
@@ -112,13 +110,9 @@ export const Ul = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.8rem;
   height: 100%;
-
-  @media screen and (max-width: 1145px) {
-    width: 25rem;
-  }
-
+  
   @media screen and (max-width: 4705px) {
     width: 100%;
   }
@@ -134,7 +128,6 @@ export const Ul = styled.ul`
     align-items: start;
     flex-direction: column;
     gap: 0.25rem;
-    width: 100%;
   }
 `;
 
@@ -174,29 +167,25 @@ export const divLink = styled.div`
   }
 `;
 
-export const divLinkIcon = styled.div`
-  border: solid 2px yellow;
-`;
-
 export const divUlLetter = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 1rem;
   width: 100%;
-
-  @media screen and (max-width: 1145px) {
-  }
 `;
 
 export const DivLetterImg = styled.div`
-  display: none;
-
-  @media screen and (max-width: 1145px) {
-    display: block;
-  }
-
+  display:flex;
+  align-items:start;
   @media screen and (max-width: 700px) {
     display: none;
+  }
+
+  & > * {
+    @media screen and (max-width: 1145px) {
+      width: 15.625rem;
+      height: 15.625rem;
+    }
   }
 `;
 
@@ -204,7 +193,11 @@ export const DivLetterImg = styled.div`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
+  width: 100%;
+  max-width: 75rem;
 
   @media screen and (max-width: 1145px) {
     width: 100%;
@@ -213,8 +206,9 @@ export const Form = styled.form`
 
 export const Fields = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  gap: 5rem;
+
+  width: 100%;
 
   @media screen and (max-width: 1145px) {
     flex-direction: row;
@@ -223,9 +217,12 @@ export const Fields = styled.div`
     gap: 5rem;
   }
 
+  @media screen and (max-width: 768px) {
+    gap: 2rem;
+  }
+
   @media screen and (max-width: 700px) {
     flex-direction: column;
-    gap: 2rem;
   }
 `;
 
@@ -233,7 +230,14 @@ export const FieldUser = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 86%;
+  width: 50%;
+
+  @media screen and (max-width: 1145px) {
+    width: 30rem;
+  }
+  @media screen and (max-width: 700px) {
+    width: 100%;
+  }
 
   div {
     display: flex;
@@ -247,22 +251,27 @@ export const FieldUser = styled.div`
     color: #000;
     background-color: #f0ece6;
     border-radius: 0.4rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   }
+`;
+
+export const divTextArea = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.7rem;
+  width: 50%;
 
   @media screen and (max-width: 1145px) {
+    flex-direction: column;
+    justify-content: space-between;
     width: 30rem;
   }
 
   @media screen and (max-width: 700px) {
     width: 100%;
   }
-`;
-
-export const divTextArea = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 0.8rem;
-  width: 100%;
 
   div {
     gap: 0.4rem;
@@ -273,23 +282,15 @@ export const divTextArea = styled.div`
   textarea {
     all: unset;
     padding: 0.6rem;
-    height: 5rem;
+    height: 6rem;
     color: #000;
     background-color: #f0ece6;
     border-radius: 0.5rem;
     overflow-y: auto;
     white-space: pre-wrap;
     word-wrap: break-word;
-  }
-
-  @media screen and (max-width: 1145px) {
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30rem;
-  }
-
-  @media screen and (max-width: 700px) {
-    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   }
 `;
 

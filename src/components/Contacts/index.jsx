@@ -51,8 +51,8 @@ export default function ContactsContent() {
               <S.DivLetterImg>
                 <Image
                   src="/carta.png"
-                  width={250}
-                  height={250}
+                  width={300}
+                  height={300}
                   alt="Ilustração de uma carta"
                 />
               </S.DivLetterImg>
@@ -75,6 +75,11 @@ export default function ContactsContent() {
                 <div>
                   <label htmlFor="">Email:</label>
                   <input type="email" placeholder="Digite seu email" />
+                </div>
+
+                <div>
+                  <label htmlFor="">Assunto:</label>
+                  <input type="text" placeholder="Digite o assunto" />
                 </div>
               </S.FieldUser>
 

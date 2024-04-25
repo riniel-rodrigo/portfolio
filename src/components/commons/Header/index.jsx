@@ -53,7 +53,7 @@ export default function Header({ onClick }) {
   }
 
   return (
-    <S.ContainerHeader>
+    <S.ContainerHeader BackgroundTheme={BackgroundTheme} >
       <S.Header className={roboto.className}>
 
         <Link href="/">
