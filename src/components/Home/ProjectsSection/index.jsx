@@ -71,5 +71,7 @@ export const Projects = () => {
         </CaroulselSwiper>
       </S.ProjectsContainer>
     </S.ProjectsMain>
+
+
   );
 };

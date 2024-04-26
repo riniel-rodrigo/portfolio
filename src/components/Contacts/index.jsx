@@ -44,6 +44,7 @@ export default function ContactsContent() {
                         <CopyButton textCopy={item.link} />
                       </S.divLink>
                     </a>
+
                   </li>
                 ))}
               </S.Ul>
@@ -105,6 +106,9 @@ export default function ContactsContent() {
             </S.Fields>
           </S.Form>
         </S.ContainerContacts>
+      <S.footer>
+        <p>Made by Riniel Rodrigo - 2024 ❤</p>
+      </S.footer>
       </S.ContainerMain>
     </>
   );

@@ -14,7 +14,10 @@ export const ProjectsMain = styled.div`
     height: 40rem;
   }
 
-  
+  @media screen and (max-width: 1025px) {
+    height: 40rem;
+  }
+
   @media screen and (max-width: 475px) {
     height: 32rem;
   }

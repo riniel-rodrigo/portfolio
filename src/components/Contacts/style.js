@@ -115,7 +115,10 @@ export const Ul = styled.ul`
     align-items: start;
     flex-direction: column;
     gap: 0.25rem;
-    width: 100%;
+
+    @media screen and (max-width: 500px) {
+      width: 100%;
+    }
   }
 `;
 
@@ -304,5 +307,15 @@ export const divSend = styled.div`
 
   @media screen and (max-width: 700px) {
     align-items: start;
+  }
+`;
+
+export const footer = styled.footer`
+  p {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    font-size: 0.813rem;
+    font-weight: 100;
+    text-align: center;
   }
 `;
