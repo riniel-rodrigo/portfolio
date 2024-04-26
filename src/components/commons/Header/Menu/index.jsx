@@ -9,11 +9,11 @@ import { ThemeButton } from "../ThemeButton/index.jsx"
 import * as S from "./style.js"
 
 export const Menu = ({ onClose, isVisible }) => {
-    const { BackgroundTheme } = useTheme();
+    const { $backgroundTheme } = useTheme();
 
     return (
         <S.ContainerMenu style={{ display: isVisible ? "inherit" : "none" }} onClick={onClose}>
-            <S.MenuH BackgroundTheme={BackgroundTheme} onClick={(e) => e.stopPropagation()}>
+            <S.MenuH $backgroundTheme={$backgroundTheme} onClick={(e) => e.stopPropagation()}>
                 <S.Icons>
                     <Link href="/">
                         <Image src="/icon.svg" width={43.19} height={45} alt="Logo Riniel, ícone" />

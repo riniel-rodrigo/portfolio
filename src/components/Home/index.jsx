@@ -7,9 +7,13 @@ import * as S from "./style.js";
 export default function Home() {
   return (
     <S.Main>
-        <Introduction />
-        <AboutMe />
+      <Introduction />
+      <AboutMe />
+
+      <S.ProjectsTitle>
+        <h2>Projetos</h2>
         <Projects />
+      </S.ProjectsTitle>
     </S.Main>
   )
 }

@@ -13,6 +13,10 @@ export const AboutmeDiv = styled.div`
     gap: 1rem;
   }
 
+  @media screen and (max-width: 1024px) {
+    width: 90%;
+  }
+
   @media screen and (max-width: 860px) {
     flex-wrap: wrap-reverse;
     justify-content: center;
@@ -79,15 +83,30 @@ export const InfoDiv = styled.div`
   }
 `;
 
-export const divIcons = styled.div`
+export const cvButton = styled.div`
+
   & > * {
-    :hover{
+    & > * {
+      @media screen and (max-width: 333px) {
+        display:none;
+      }
+    }
+  }
+`;
+
+export const divIcons = styled.div`
+  margin-top: 0.5rem;
+  & > * {
+    :hover {
       cursor: pointer;
       color: #7e49d9;
       transition: all 0.2s ease-in-out;
     }
-  }
 
+    & > * {
+      font-size: 2.25rem;
+    }
+  }
 `;
 
 export const AboutmeDivRight = styled.div`

@@ -26,7 +26,7 @@ const rubik = Rubik_Doodle_Shadow({
 
 export default function Header() {
 
-  const { BackgroundTheme } = useTheme();
+  const { $backgroundTheme } = useTheme();
 
   const [isHovered, setIsHovered] = useState(false);
 
@@ -49,7 +49,7 @@ export default function Header() {
   }, []);
 
   return (
-    <S.ContainerHeader BackgroundTheme={BackgroundTheme} >
+    <S.ContainerHeader >
       <S.Header className={roboto.className}>
 
         <Link href="/">
@@ -66,12 +66,10 @@ export default function Header() {
             <ActiveLink href="/contacts" children="Fale comigo" />
           </S.NavLink>
 
-
           <ThemeButton />
 
-
           <S.MenuH onClick={openMenu}>
-            <S.DivMenuH BackgroundTheme={BackgroundTheme}>
+            <S.DivMenuH $backgroundTheme={$backgroundTheme}>
               <Icon icon="menu" size={35} />
             </S.DivMenuH>
           </S.MenuH>

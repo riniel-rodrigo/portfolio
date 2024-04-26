@@ -18,21 +18,18 @@ export const Introduction = () => {
           </h1>
           <p>Bem-vindo(a) ao meu portfólio! Neste espaço, você encontrará um pouquinho sobre mim, poderá explorar alguns projetos que desenvolvi e, caso surja alguma dúvida ou se desejar trocar ideias, sinta-se à vontade para entrar em contato!</p>
           <div>
-            <Link href="/contacts" >
-              <Button content="Converse comigo!" />
-            </Link>
-
-            <Link target="_blank" href="https://drive.google.com/file/d/1UB6pS4XTMb_tfFlAjYYqVFKtKazEXbZD/view?usp=sharing">
-              <Button dark content="Currículo" children={<Icon icon="pdf" size={19} />} />
-            </Link>
+            <Button href="/contacts" content="Converse comigo!" />
+            <S.cvButton>
+              <Button href="https://drive.google.com/file/d/1UB6pS4XTMb_tfFlAjYYqVFKtKazEXbZD/view?usp=sharing" dark content="Currículo" children={<Icon icon="pdf" size={19} />} />
+            </S.cvButton>
           </div>
 
           <S.divIcons>
-            <Link href="https://www.linkedin.com/in/riniel-rodrigo/" target="_blank">
-              <Icon icon="linkedin" size={38} />
-            </Link>
             <Link href="https://github.com/riniel-rodrigo" target="_blank">
-              <Icon icon="github" size={36} />
+              <Icon icon="github" />
+            </Link>
+            <Link href="https://www.linkedin.com/in/riniel-rodrigo/" target="_blank">
+              <Icon icon="linkedin" />
             </Link>
           </S.divIcons>
         </S.InfoDiv>

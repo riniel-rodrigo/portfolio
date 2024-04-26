@@ -8,7 +8,7 @@ export const ActiveLink = ({ href, children, onClick }) => {
     const isActive = pathname === href.toString();
 
     return (
-        <S.StyledLink isActive={isActive} onClick={onClick}>
+        <S.StyledLink $isActive={isActive} onClick={onClick}>
             <Link href={href}>{children}</Link>
         </S.StyledLink>
         

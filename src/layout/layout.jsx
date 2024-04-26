@@ -11,10 +11,10 @@ const montserrat = Montserrat({
 });
 
 export default function Layout({ children }) {
-  const { BackgroundTheme } = useTheme();
+  const { $backgroundTheme } = useTheme();
 
   return (
-    <ThemeProvider theme={BackgroundTheme === "light" ? lighTheme : darkTheme}>
+    <ThemeProvider theme={$backgroundTheme === "light" ? lighTheme : darkTheme}>
       <div className={montserrat.className}>
         <Header />
         {children}

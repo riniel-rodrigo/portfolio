@@ -24,6 +24,14 @@ export const Header = styled.header`
   @media screen and (max-width: 1280px) {
     width: 85%;
   }
+
+  @media screen and (max-width: 1024px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 860px) {
+    width: 85%;
+  }
 `;
 
 export const LogoDiv = styled.div`
@@ -86,6 +94,5 @@ export const MenuH = styled.div`
 export const DivMenuH = styled.div`
   & > * {
     font-size: 2.1875rem;
-    color: ${(props) => (props.BackgroundTheme === "light" ? "#000" : "#fff")};
   }
 `;

@@ -32,7 +32,7 @@ export default function ContactsContent() {
             <S.divUlLetter>
               <S.Ul>
                 {data.map((item) => (
-                  <li>
+                  <li key={data.id}>
                     <a href={item.href} target="_blank" rel="noopener noreferrer" >
                       <S.divItem>
                         <div>{item.icon}</div>

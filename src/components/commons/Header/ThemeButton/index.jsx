@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { useTheme } from "../../Context/ThemeContext.jsx"
 import Icon from '../../icons/index.jsx';
@@ -7,15 +7,15 @@ import * as S from './style.js';
 
 export const ThemeButton = () => {
 
-    const { BackgroundTheme, setBackgroundTheme } = useTheme();
+    const { $backgroundTheme, setBackgroundTheme } = useTheme();
 
     const toggleTheme = () => {
-        BackgroundTheme === "light" ? setBackgroundTheme("dark") : setBackgroundTheme("light");
+        $backgroundTheme === "light" ? setBackgroundTheme("dark") : setBackgroundTheme("light");
     }
 
     return (
         <S.divThemeIcon onClick={toggleTheme}>
-            {BackgroundTheme === "light" ? (
+            {$backgroundTheme === "light" ? (
                 <Icon icon="sun" />
             ) : (
                 <Icon icon="moon" />

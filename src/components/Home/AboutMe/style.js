@@ -4,7 +4,7 @@ export const ContainerAboutMe = styled.div`
   display: flex;
   gap: 4rem;
   width: 80%;
-  height:110%;
+  height: 110%;
   max-width: 77rem;
 
   @media screen and (max-width: 1280px) {
@@ -14,7 +14,6 @@ export const ContainerAboutMe = styled.div`
   @media screen and (max-width: 1024px) {
     width: 95%;
     gap: 2rem;
-    min-height:rem;
   }
 
   @media screen and (max-width: 860px) {
@@ -25,7 +24,7 @@ export const ContainerAboutMe = styled.div`
 
 export const divLeft = styled.div`
   display: flex;
-  padding-top:2rem;
+  padding-top: 2rem;
   flex-direction: column;
   gap: 2rem;
   align-items: center;
@@ -39,7 +38,6 @@ export const divLeft = styled.div`
   }
 
   img {
-    
     @media screen and (max-width: 1024px) {
       width: 15.625rem;
       height: 15.625rem;
@@ -93,17 +91,13 @@ export const divRight = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding-top:1.8rem;
+  padding-top: 1.8rem;
   text-align: justify;
 
   h1 {
     font-size: 2rem;
     font-weight: 500;
     text-align: center;
-
-    @media screen and (max-width: 1024px) {
-      text-align: center;
-    }
   }
 
   div {

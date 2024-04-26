@@ -7,6 +7,14 @@ export const ContainerMain = styled.div`
   align-items: center;
   width: 100%;
   margin-top: 6.5rem;
+
+  @media screen and (max-width: 860px) {
+    margin-top: 4rem;
+  }
+
+  @media screen and (max-width: 420px) {
+    margin-top: 2rem;
+  }
 `;
 
 export const ContainerContacts = styled.div`
@@ -21,13 +29,12 @@ export const ContainerContacts = styled.div`
     width: 85%;
   }
 
-  @media screen and (max-width: 1024px) {
-    width: 90%;
+  @media screen and (max-width: 700px) {
+    gap: 4rem;
   }
 
-  @media screen and (max-width: 700px) {
-    width: 87%;
-    gap: 4rem;
+  @media screen and (max-width: 475px) {
+    width: 90%;
   }
 `;
 
@@ -94,14 +101,13 @@ export const Ul = styled.ul`
   justify-content: space-between;
   gap: 1.8rem;
   height: 100%;
-  width:100%;
-
+  width: 100%;
 
   li {
     display: flex;
     align-items: end;
     gap: 0.5rem;
-    width:100%;
+    width: 100%;
   }
 
   li a {
@@ -109,7 +115,7 @@ export const Ul = styled.ul`
     align-items: start;
     flex-direction: column;
     gap: 0.25rem;
-    width:100%;
+    width: 100%;
   }
 `;
 

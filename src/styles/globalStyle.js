@@ -9,37 +9,24 @@ export const GlobalStyles = createGlobalStyle`
     
     html, body{
         font-size: 1rem;
-        color: ${props => props.theme.fontColor};
-        background-color: ${props => props.theme.body};
+        color: ${(props) => props.theme.fontColor};
+        background-color: ${(props) => props.theme.body};
         transition: all 0.7s ease;
+        min-width:14rem;
 
-        
-/*         
-        @media screen and (min-width: 1400px) {
-            background-image: none;
+        ::-webkit-scrollbar {
+            width: 0.444rem;
+            background-color: rgba(206, 212, 218, 0.4);
         }
 
-        @media screen and (max-width: 1150px) {
-            background-position: 0px -50rem;
-            background-attachment: fixed;
+        ::-webkit-scrollbar-thumb {
+            background: #7E49D9;
+            border-radius: 1rem;
         }
-
-        @media screen and (max-width: 950px) {
-            background-position: 0 10rem;
-            background-position: center top -0.1rem;
-        }
-
-        @media screen and (max-width: 500px) {
-            background-image: none;
-        } */
-    }
-
-    button{
-        
     }
 
     a {
-        color: ${props => props.theme.fontColor};
+        color: ${(props) => props.theme.fontColor};
         text-decoration: none;
     }
 

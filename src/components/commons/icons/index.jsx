@@ -9,6 +9,7 @@ import { GoMoon } from "react-icons/go";
 import { ImSun } from "react-icons/im";
 import { PiEye, PiEyeSlash, PiFilePdfLight } from "react-icons/pi";
 import { FaLinkedin } from "react-icons/fa6";
+import { TfiNewWindow } from "react-icons/tfi";
 
 export default function Icon({ icon, color, size }) {
     const iconMapping = {
@@ -27,6 +28,7 @@ export default function Icon({ icon, color, size }) {
         sun: ImSun,
         eye: PiEye,
         eyeOff: PiEyeSlash,
+        window: TfiNewWindow,
     };
 
     const IconComponent = iconMapping[icon];
