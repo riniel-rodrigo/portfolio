@@ -114,6 +114,10 @@ export const divRight = styled.div`
   }
 `;
 
+export const fullP = styled.div`
+
+`;
+
 export const P = styled.div`
   filter: blur(0.05rem);
 `;
@@ -126,6 +130,7 @@ export const viewMoreDiv = styled.div`
   font-size: 0.9rem;
   font-weight: 400;
   cursor: pointer;
+  z-index: 1;
 
   span {
     display: flex;

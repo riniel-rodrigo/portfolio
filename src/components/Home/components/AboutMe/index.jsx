@@ -1,9 +1,9 @@
 import { JetBrains_Mono } from "next/font/google";
 import Image from "next/image";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 import Icon from "../../../commons/icons/index.jsx";
-
 import * as S from "./style.js";
 
 const jetbrains_mono = JetBrains_Mono({
@@ -58,29 +58,44 @@ export const AboutMe = () => {
             programação através das linguagens Java e C, criando pequenos
             programas e explorando.
           </p>
-          {view === true ? (
-            <>
-              <p>
-                Em meados de 2023, decidi me aprofundar verdadeiramente na área, retomando
-                meus estudos com foco em C# e desenvolvimento web. Atualmente,
-                estou cursando Análise e Desenvolvimento de Sistemas na
-                PUC-MINAS e também participando de outros cursos relacionados.
-              </p>
-              <p>
-                Tenho um amor pela tecnologia e pela área de desenvolvimento,
-                desde o levantamento de requisitos até a escrita de código.
-                Pretendo continuar me fascinando com esse mundo enquanto me
-                torno um profissional de qualidade.
-              </p>
-            </>
-          ) : (
-            <S.P>
-              <p>
-                Em meados de 2023, decidi me aprofundar verdadeiramente na área, retomando
-                meus estudos..
-              </p>
-            </S.P>
-          )}
+
+          <motion.div>
+            {view === true ? (
+              <>
+                <motion.p
+                  key={view}
+                  initial={{ height: view ? 0 : "auto", opacity: view ? 0 : 1 }}
+                  animate={{ height: view ? "auto" : 0, opacity: view ? 1 : 0 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  Em meados de 2023, decidi me aprofundar verdadeiramente na área, retomando
+                  meus estudos com foco em C# e desenvolvimento web. Atualmente,
+                  estou cursando Análise e Desenvolvimento de Sistemas na
+                  PUC-MINAS e também participando de outros cursos relacionados.
+                </motion.p>
+
+                <motion.p
+                  key={view}
+                  initial={{ height: view ? 0 : "auto", opacity: view ? 0 : 1 }}
+                  animate={{ height: view ? "auto" : 0, opacity: view ? 1 : 0 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  Tenho um amor pela tecnologia e pela área de desenvolvimento,
+                  desde o levantamento de requisitos até a escrita de código.
+                  Pretendo continuar me fascinando com esse mundo enquanto me
+                  torno um profissional de qualidade.
+                </motion.p>
+              </>
+            ) : (
+              <S.P>
+                <p>
+                  Em meados de 2023, decidi me aprofundar verdadeiramente na área, retomando
+                  meus estudos..
+                </p>
+              </S.P>
+            )}
+          </motion.div>
+
           <S.viewMoreDiv>
             {view === true ? (
               <span onClick={viewMore}>

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 import { mockContact } from "../../mocks/mockContact.jsx";
 import Icon from "../commons/icons/index.jsx";
@@ -14,7 +15,12 @@ export default function ContactsContent() {
   const [visible, setVisible] = useState(false);
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <Head>
         <title>Contatos | Riniel</title>
       </Head>
@@ -110,6 +116,6 @@ export default function ContactsContent() {
           <p>Made by Riniel Rodrigo - 2024 ❤</p>
         </S.footer>
       </S.ContainerMain>
-    </>
+    </motion.div>
   );
 }
