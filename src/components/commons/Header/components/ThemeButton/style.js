@@ -15,8 +15,7 @@ export const divThemeIcon = styled.div`
     }
 
     @media screen and (max-width: 475px) {
-      margin-bottom:0.2rem;
+      margin-bottom: 0.2rem;
     }
-
   }
 `;

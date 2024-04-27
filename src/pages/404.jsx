@@ -11,7 +11,7 @@ export default function NotFound() {
                 <p>Não consegui encontrar essa página!</p>
                 <span>Clique no botão abaixo para ir à página inicial</span>
             </div>
-            <Link href="/" >ir para página principal</Link>
+            <Link href="/">ir para página principal</Link>
         </>
     );
 }

@@ -5,10 +5,10 @@ import { useCallback, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Menu } from "./Menu/index.jsx";
-import { ActiveLink } from "./ActiveLink/index.jsx";
+import { Menu } from "./components/Menu/index.jsx";
+import { ActiveLink } from "./components/ActiveLink/index.jsx";
 import { useTheme } from "../Context/ThemeContext.jsx"
-import { ThemeButton } from "./ThemeButton/index.jsx";
+import { ThemeButton } from "./components/ThemeButton/index.jsx";
 import Icon from "../icons/index.jsx";
 
 import * as S from "./style.js";
@@ -62,7 +62,6 @@ export default function Header() {
         <S.Nav>
           <S.NavLink>
             <ActiveLink href="/" children="Sobre mim" />
-            {/* <ActiveLink href="/Projects" children="Projetos" /> */}
             <ActiveLink href="/contacts" children="Fale comigo" />
           </S.NavLink>
 

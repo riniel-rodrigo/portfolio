@@ -25,7 +25,7 @@ export default function ContactsContent() {
             <S.divTitle>
               <h1>Contatos</h1>
               <div onClick={() => setVisible(!visible)}>
-                {visible ?  <Icon icon="eyeOff" /> : <Icon icon="eye" />}
+                {visible ? <Icon icon="eyeOff" /> : <Icon icon="eye" />}
               </div>
             </S.divTitle>
 
@@ -106,9 +106,9 @@ export default function ContactsContent() {
             </S.Fields>
           </S.Form>
         </S.ContainerContacts>
-      <S.footer>
-        <p>Made by Riniel Rodrigo - 2024 ❤</p>
-      </S.footer>
+        <S.footer>
+          <p>Made by Riniel Rodrigo - 2024 ❤</p>
+        </S.footer>
       </S.ContainerMain>
     </>
   );

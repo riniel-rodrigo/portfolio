@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { useTheme } from "../../Context/ThemeContext.jsx"
-import Icon from '../../icons/index.jsx';
+import { useTheme } from "../../../Context/ThemeContext.jsx"
+import Icon from '../../../icons/index.jsx';
 
 import * as S from './style.js';
 

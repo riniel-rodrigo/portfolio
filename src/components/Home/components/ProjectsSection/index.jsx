@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Image from "next/image";
-import { useTheme } from "../../commons/Context/ThemeContext.jsx"
+import { useTheme } from "../../../commons/Context/ThemeContext.jsx"
 import { useState } from "react";
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';

@@ -1,6 +1,6 @@
-import { Introduction } from "./Introduction/index.jsx"
-import { AboutMe } from "./AboutMe/index.jsx"
-import { Projects } from "./ProjectsSection/index.jsx"
+import { Introduction } from "./components/Introduction/index.jsx"
+import { AboutMe } from "./components/AboutMe/index.jsx"
+import { Projects } from "./components/ProjectsSection/index.jsx"
 
 import * as S from "./style.js";
 

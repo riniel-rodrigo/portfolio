@@ -2,7 +2,7 @@ import { JetBrains_Mono } from "next/font/google";
 import Image from "next/image";
 import { useState } from "react";
 
-import Icon from "../../commons/icons/index.jsx";
+import Icon from "../../../commons/icons/index.jsx";
 
 import * as S from "./style.js";
 

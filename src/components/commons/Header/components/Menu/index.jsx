@@ -1,9 +1,9 @@
 import Link from "next/link"
 import Image from "next/image"
 
-import Icon from "../../icons/index.jsx"
+import Icon from "../../../icons/index.jsx"
 import { ActiveLink } from "../ActiveLink/index.jsx"
-import { useTheme } from "../../Context/ThemeContext.jsx"
+import { useTheme } from "../../../Context/ThemeContext.jsx"
 import { ThemeButton } from "../ThemeButton/index.jsx"
 
 import * as S from "./style.js"
@@ -27,7 +27,6 @@ export const Menu = ({ onClose, isVisible }) => {
                 </S.Icons>
                 <S.Nav>
                     <ActiveLink onClick={onClose} href="/" children="Sobre mim" />
-                    {/* <ActiveLink onClick={onClose} href="/Projects" children="Projetos" /> */}
                     <ActiveLink onClick={onClose} href="/contacts" children="Fale comigo" />
                 </S.Nav>
             </S.MenuH>

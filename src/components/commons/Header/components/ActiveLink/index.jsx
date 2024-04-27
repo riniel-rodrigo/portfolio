@@ -11,6 +11,6 @@ export const ActiveLink = ({ href, children, onClick }) => {
         <S.StyledLink $isActive={isActive} onClick={onClick}>
             <Link href={href}>{children}</Link>
         </S.StyledLink>
-        
+
     );
 };

@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import avatar from "../../../../public/avatar.png";
-import Button from "../../commons/Button/index.jsx";
-import Icon from "../../commons/icons/index.jsx";
+import avatar from "../../../../../public/avatar.png";
+import Button from "../../../commons/Button/index.jsx";
+import Icon from "../../../commons/icons/index.jsx";
 
 import * as S from "./style.js";
 
