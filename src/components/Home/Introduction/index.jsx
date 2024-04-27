@@ -20,7 +20,7 @@ export const Introduction = () => {
           <div>
             <Button href="/contacts" content="Converse comigo!" />
             <S.cvButton>
-              <Button href="https://drive.google.com/file/d/1UB6pS4XTMb_tfFlAjYYqVFKtKazEXbZD/view?usp=sharing" dark content="Currículo" children={<Icon icon="pdf" size={19} />} />
+              <Button target="_blank" href="https://drive.google.com/file/d/1UB6pS4XTMb_tfFlAjYYqVFKtKazEXbZD/view?usp=sharing" dark content="Currículo" children={<Icon icon="pdf" size={19} />} />
             </S.cvButton>
           </div>
 
