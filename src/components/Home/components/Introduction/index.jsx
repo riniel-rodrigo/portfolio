@@ -34,7 +34,7 @@ export const Introduction = () => {
             <S.cvButton>
               <Button
                 target="_blank"
-                href="https://drive.google.com/file/d/1UB6pS4XTMb_tfFlAjYYqVFKtKazEXbZD/view?usp=sharing"
+                href="https://drive.google.com/file/d/1p8A3DWgVh64PZB9a-n6EvzvK07K7fx3_/view?usp=sharing"
                 dark
                 content="Currículo"
                 children={<Icon icon="pdf" size={19} />}
