@@ -7,7 +7,7 @@ export function useTheme() {
 }
 
 export function ThemeProvider({ children }) {
-  const [backgroundTheme, setBackgroundTheme] = useState("dark");
+  const [backgroundTheme, setBackgroundTheme] = useState("light");
 
   return (
     <ThemeContext.Provider value={{ $backgroundTheme: backgroundTheme, setBackgroundTheme }}>

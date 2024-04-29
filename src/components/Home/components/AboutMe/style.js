@@ -118,7 +118,7 @@ export const fullP = styled.div`
 
 `;
 
-export const P = styled.div`
+export const Preview = styled.div`
   filter: blur(0.05rem);
 `;
 

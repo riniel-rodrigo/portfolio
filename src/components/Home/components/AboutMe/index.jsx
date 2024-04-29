@@ -64,8 +64,8 @@ export const AboutMe = () => {
               <>
                 <motion.p
                   key={view}
-                  initial={{ height: view ? 0 : "auto", opacity: view ? 0 : 1 }}
-                  animate={{ height: view ? "auto" : 0, opacity: view ? 1 : 0 }}
+                  initial={{ height: view ? 0 : "100%", opacity: view ? 0 : 1 }}
+                  animate={{ height: view ? "100%" : 0, opacity: view ? 1 : 0 }}
                   transition={{ duration: 0.5 }}
                 >
                   Em meados de 2023, decidi me aprofundar verdadeiramente na área, retomando
@@ -74,25 +74,20 @@ export const AboutMe = () => {
                   PUC-MINAS e também participando de outros cursos relacionados.
                 </motion.p>
 
-                <motion.p
-                  key={view}
-                  initial={{ height: view ? 0 : "auto", opacity: view ? 0 : 1 }}
-                  animate={{ height: view ? "auto" : 0, opacity: view ? 1 : 0 }}
-                  transition={{ duration: 0.5 }}
-                >
+                <p>
                   Tenho um amor pela tecnologia e pela área de desenvolvimento,
                   desde o levantamento de requisitos até a escrita de código.
                   Pretendo continuar me fascinando com esse mundo enquanto me
                   torno um profissional de qualidade.
-                </motion.p>
+                </p>
               </>
             ) : (
-              <S.P>
+              <S.Preview>
                 <p>
                   Em meados de 2023, decidi me aprofundar verdadeiramente na área, retomando
                   meus estudos..
                 </p>
-              </S.P>
+              </S.Preview>
             )}
           </motion.div>
 
