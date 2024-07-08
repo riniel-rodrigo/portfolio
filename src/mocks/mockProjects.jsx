@@ -8,8 +8,8 @@ export const mockProjects = [
     {
         id: uuid(),
         image: {
-            url: "https://i.imgur.com/zyP7J3I.png",
-            alt: "Interface do projeto EducaTube",
+            url: "https://i.imgur.com/AfPeFFF.gif",
+            alt: "Tela inicial do projeto em diferentes dispositivos",
         },
         badge1: <Badge color="#FFF" background="#293069" content="ASP.NET Core MVC" />,
         badge2: <Badge color="#FFF" background="#2079BA" content="Entity Framework" />,
@@ -29,6 +29,20 @@ export const mockProjects = [
         name: "Portfólio Riniel",
         description: "Veja mais detalhes sobre os bastidores deste portfólio!",
         gitButton: <Button target="_blank"  dark href="https://github.com/riniel-rodrigo/portfolio" content="Repositório" children={<Icon icon="github" />}/>,
+    },
+
+    {
+        id: uuid(),
+        image: {
+            url: "https://imgur.com/uNFnPrh",
+            alt: "Interfaces do projeto Mc Donald's em diferentes dispositivos",
+        },
+        badge1: <Badge color="#000" background="#81E0FF" content="React Js" />,
+        badge2: <Badge color="#FFF" background="#FFAF69" content="Styled Components" />,
+        name: "Mc Donald's",
+        description: "Criação de uma interface inspirada na loja do Mc Donald's, com o intuito de praticar React e outros conceitos.",
+        gitButton: <Button target="_blank"  dark href="https://github.com/riniel-rodrigo/mc-donalds-vnw" content="Repositório" children={<Icon icon="github" />}/>,
+        deployButton: <Button target="_blank" dark href="https://mc-donalds-coral.vercel.app/" content="Acesse" children={<Icon icon="window" />}/>,
     },
 
     {
