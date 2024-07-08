@@ -77,8 +77,8 @@ export const AboutMe = () => {
                 <p>
                   Tenho um amor pela tecnologia e pela área de desenvolvimento,
                   desde o levantamento de requisitos até a escrita de código.
-                  Pretendo continuar me fascinando com esse mundo enquanto me
-                  torno um profissional de qualidade.
+                  Pretendo continuar me dedicando com este mundo enquanto me
+                  torno um profissional de referência para o mercado.
                 </p>
               </>
             ) : (

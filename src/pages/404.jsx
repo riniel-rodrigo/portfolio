@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import { Button2 } from "@/components/commons/Button";
 
 export default function NotFound() {
     return (
@@ -9,9 +10,7 @@ export default function NotFound() {
             <h1>404</h1>
             <div>
                 <p>Não consegui encontrar essa página!</p>
-                <span>Clique no botão abaixo para ir à página inicial</span>
             </div>
-            <Link href="/">ir para página principal</Link>
         </>
     );
 }
