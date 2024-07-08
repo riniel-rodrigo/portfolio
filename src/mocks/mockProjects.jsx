@@ -34,7 +34,7 @@ export const mockProjects = [
     {
         id: uuid(),
         image: {
-            url: "https://imgur.com/nGy1dnH",
+            url: "https://i.imgur.com/yz8jKaf.png",
             alt: "Interfaces do projeto Mc Donald's em diferentes dispositivos",
         },
         badge1: <Badge color="#000" background="#81E0FF" content="React Js" />,
