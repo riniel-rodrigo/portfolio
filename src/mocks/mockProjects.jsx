@@ -14,7 +14,7 @@ export const mockProjects = [
         badge1: <Badge color="#FFF" background="#293069" content="ASP.NET Core MVC" />,
         badge2: <Badge color="#FFF" background="#2079BA" content="Entity Framework" />,
         name: "EducaTube",
-        description: "Este projeto é um portal que oferece vídeos educativos para organizar informações de qualidade sobre vários temas, em um ambiente projetado para facilitar o foco e a concentração, reduzindo distrações durante o estudo.",
+        description: "Este projeto é um portal que oferece vídeos educativos e ferramentas para organizar informações de qualidade sobre vários temas, em um ambiente projetado para facilitar o foco e a concentração, reduzindo distrações durante o estudo.",
         gitButton: <Button target="_blank"  dark href="https://github.com/riniel-rodrigo/educa-tube" content="Repositório" children={<Icon icon="github" />}/>,
     },
 
