@@ -55,7 +55,11 @@ export const Projects = () => {
                     height={250}
                     unoptimized
                   />
-                  <span>{project.badges}</span>
+                  <S.divBadges>
+                    <span>{project.badge1}</span>
+                    <span>{project.badge2}</span>
+                    <span>{project.badge3}</span>
+                  </S.divBadges>
                 </S.divLeft>
                 <S.divRight>
                   <h1>{project.name}</h1>

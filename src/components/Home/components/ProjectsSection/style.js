@@ -76,8 +76,10 @@ export const Project = styled.div`
 
 export const divLeft = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap:1rem;
 
   img {
     @media screen and (max-width: 600px) {
@@ -141,4 +143,9 @@ export const divRight = styled.div`
       text-align:justify;
     }
   }
+`;
+
+export const divBadges = styled.div`
+  display: flex;
+  gap:0.5rem;
 `;
