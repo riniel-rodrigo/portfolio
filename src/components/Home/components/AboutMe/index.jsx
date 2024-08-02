@@ -38,13 +38,7 @@ export const AboutMe = () => {
             <li style={{ backgroundColor: "#EFD81D", color: "#000000" }}>
               javascript
             </li>
-            <li style={{ backgroundColor: "#000000", color: "#FFFFFF" }}>
-              next.js
-            </li>
             <li style={{ backgroundColor: "#0D9614", color: "#FFFFFF" }}>c#</li>
-            <li style={{ backgroundColor: "#4A7DA4", color: "#FFFFFF" }}>
-              sql
-            </li>
           </ul>
         </S.BadgeDiv>
       </S.divLeft>
