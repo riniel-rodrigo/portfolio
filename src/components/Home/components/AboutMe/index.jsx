@@ -47,10 +47,9 @@ export const AboutMe = () => {
         <h1>Sobre mim</h1>
         <div>
           <p>
-            Olá! Meu nome é Riniel Rodrigo, tenho 20 anos e moro em Belo
-            Horizonte, Minas Gerais. Quando era mais jovem, conheci a
-            programação através das linguagens Java e C, criando pequenos
-            programas e explorando.
+            Olá! Meu nome é Riniel Rodrigo, moro em Belo Horizonte, Minas
+            Gerais. Quando era mais jovem, conheci a programação através das
+            linguagens Java e C, criando pequenos programas e explorando.
           </p>
 
           <motion.div>
@@ -62,10 +61,11 @@ export const AboutMe = () => {
                   animate={{ height: view ? "100%" : 0, opacity: view ? 1 : 0 }}
                   transition={{ duration: 0.5 }}
                 >
-                  Em meados de 2023, decidi me aprofundar verdadeiramente na área, retomando
-                  meus estudos com foco em C# e desenvolvimento web. Atualmente,
-                  estou cursando Análise e Desenvolvimento de Sistemas na
-                  PUC-MINAS e também participando de outros cursos relacionados.
+                  Em meados de 2023, decidi me aprofundar verdadeiramente na
+                  área, retomando meus estudos com foco em C# e desenvolvimento
+                  web. Atualmente, estou cursando Análise e Desenvolvimento de
+                  Sistemas na PUC-MINAS e também participando de outros cursos
+                  relacionados.
                 </motion.p>
 
                 <p>
@@ -78,8 +78,8 @@ export const AboutMe = () => {
             ) : (
               <S.Preview>
                 <p>
-                  Em meados de 2023, decidi me aprofundar verdadeiramente na área, retomando
-                  meus estudos..
+                  Em meados de 2023, decidi me aprofundar verdadeiramente na
+                  área, retomando meus estudos..
                 </p>
               </S.Preview>
             )}

@@ -4,13 +4,12 @@ import Image from "next/image";
 import avatar from "../../../../../public/avatar.png";
 import Button from "../../../commons/Button/index.jsx";
 import Icon from "../../../commons/icons/index.jsx";
-import { useTheme } from "../../../commons/Context/ThemeContext"
+import { useTheme } from "../../../commons/Context/ThemeContext";
 
 import * as S from "./style.js";
 import { Button2 } from "../../../commons/Button/style.js";
 
 export const Introduction = () => {
-
   const { $backgroundTheme } = useTheme();
 
   return (
@@ -29,12 +28,14 @@ export const Introduction = () => {
           </p>
           <div>
             <Link href="/contacts">
-              <Button2 $backgroundTheme={$backgroundTheme} >Converse comigo!</Button2>
+              <Button2 $backgroundTheme={$backgroundTheme}>
+                Converse comigo!
+              </Button2>
             </Link>
             <S.cvButton>
               <Button
                 target="_blank"
-                href="https://drive.google.com/file/d/1Wuo_Fvifg3Ljmv0sPziwoxDv5eLBe-t6/view?usp=sharing"
+                href="https://drive.google.com/file/d/1sKgIthjXdIpEBuwiiBbJHwuE3OmEpwNO/view?usp=sharing"
                 dark
                 content="Currículo"
                 children={<Icon icon="pdf" size={19} />}
